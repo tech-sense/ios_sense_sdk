@@ -1,0 +1,11 @@
+framework module Sense {
+  umbrella header "Sense.h"
+  export *
+
+  module * { export * }
+}
+
+module Sense.Swift {
+  header "Sense-Swift.h"
+  requires objc
+}
