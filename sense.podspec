@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'Sense'
+  s.name         = 'muthu'
   s.version      = '0.0.2'
   s.summary      = 'Sense iOS SDK'
   s.description  = <<-DESC
