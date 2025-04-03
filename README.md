@@ -3,12 +3,12 @@
 Sense is a device intelligence and identification tool. This tool collects a comprehensive set of attributes unique to a device or browser, forming an identity that will help businesses.
 
 ## Requirements
-    * iOS 13.0 or above
+    * iOS 12.0 or above
     * Swift version 5.0 and above
 
 ### Step 1 - Installation
 ```
-pod 'sense', '~> 0.0.1'
+pod 'Sense', '~> 0.0.2'
 pod update
 ```
 ### Step 2 - Import SDK

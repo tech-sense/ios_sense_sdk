@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Sense'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'Sense iOS SDK'
   s.description  = <<-DESC
                   Fraud Detection and Prevention Tools for Onboarding, Online Payments, Disputes & Compliance
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
     }
   s.author       = { "Sense" => "tech@getsense.co" }
   s.source       = { :git => "https://github.com/tech-getsense/ios_sense_sdk.git", :tag => s.version.to_s }
-  s.vendored_frameworks = 'sense.xcframework'
+  s.vendored_frameworks = 'Sense.xcframework'
   s.platform     = :ios, '12.0'
 end
