@@ -8,12 +8,12 @@ Sense is a device intelligence and identification tool. This tool collects a com
 
 ### Step 1 - Installation
 ```
-pod 'Sense', '~> 0.0.2'
+pod 'SenseSDK', '~> 0.0.1'
 pod update
 ```
 ### Step 2 - Import SDK
 ```
-import Sense
+import SenseSDK
 ```
 To initialize the SDK add the below line of code with the public key you retrieved from Sense client panel. If you don't have a public key create new one and call that below function.
 
