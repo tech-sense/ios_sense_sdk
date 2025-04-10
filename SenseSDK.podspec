@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = '0.0.1'
   s.summary      = 'Sense iOS SDK'
   s.description  = <<-DESC
-                  Fraud Detection and Prevention Tools for Onboarding, Online Payments, Disputes & Compliance
+                  Sense is a device intelligence and identification tool. This tool collects a comprehensive set of attributes unique to a device or browser, forming an identity that will help businesses.
                    DESC
   s.homepage     = 'https://pro.getsense.co'
   s.license      = { :type => "Apache License, Version 2.0", :text => <<-LICENSE
