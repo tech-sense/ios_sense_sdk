@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   }
   s.author       = { "Sense" => "tech@getsense.co" }
   s.source       = { :git => "https://github.com/tech-getsense/ios_sense_sdk.git", :tag => s.version.to_s }
-  s.vendored_frameworks = 'SenseSDK.xcframework'
+  s.vendored_frameworks = 'XCFramework/SenseSDK.xcframework'
   s.platform     = :ios, '12.0'
 end
