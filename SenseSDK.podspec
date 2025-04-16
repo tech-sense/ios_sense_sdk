@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SenseSDK'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'Sense iOS SDK'
   s.description  = <<-DESC
                   Sense is a device intelligence and identification tool. This tool collects a comprehensive set of attributes unique to a device or browser, forming an identity that will help businesses.

@@ -1,9 +1,4 @@
-//
-//  SenseSDK.h
-//  SenseSDK
-//
-//  Created by IPPO383 on 04/04/25.
-//
+
 
 #import <Foundation/Foundation.h>
 
