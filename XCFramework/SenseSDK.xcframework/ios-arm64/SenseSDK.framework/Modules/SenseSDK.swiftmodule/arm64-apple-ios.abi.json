@@ -2153,1330 +2153,1330 @@
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7334,
+      "offset": 7375,
       "length": 13,
       "value": "\"sessionData\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7564,
+      "offset": 7605,
       "length": 5,
       "value": "\"str\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7601,
+      "offset": 7642,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7612,
+      "offset": 7653,
       "length": 7,
-      "value": "\"0.0.1\""
+      "value": "\"0.0.3\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7649,
+      "offset": 7690,
       "length": 6,
       "value": "\"zone\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7711,
+      "offset": 7752,
       "length": 8,
       "value": "\"device\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7783,
+      "offset": 7824,
       "length": 10,
       "value": "\"language\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7849,
+      "offset": 7890,
       "length": 10,
       "value": "\"location\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7882,
+      "offset": 7923,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7914,
+      "offset": 7955,
       "length": 8,
       "value": "\"screen\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7980,
+      "offset": 8021,
       "length": 7,
       "value": "\"media\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8044,
+      "offset": 8085,
       "length": 9,
       "value": "\"battery\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8112,
+      "offset": 8153,
       "length": 12,
       "value": "\"connection\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8210,
+      "offset": 8251,
       "length": 11,
       "value": "\"detection\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8294,
+      "offset": 8335,
       "length": 20,
       "value": "\"tutSenseIdentifier\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8390,
+      "offset": 8431,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8446,
+      "offset": 8487,
       "length": 8,
       "value": "\"apiKey\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8479,
+      "offset": 8520,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8507,
+      "offset": 8548,
       "length": 11,
       "value": "\"senseInfo\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 8546,
+      "offset": 8587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8577,
+      "offset": 8618,
       "length": 5,
       "value": "\"tag\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8604,
+      "offset": 8645,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8632,
+      "offset": 8673,
       "length": 12,
       "value": "\"workflowId\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8682,
+      "offset": 8723,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8721,
+      "offset": 8762,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8749,
+      "offset": 8790,
       "length": 13,
       "value": "\"sessionData\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8888,
+      "offset": 8929,
       "length": 5,
       "value": "\"str\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8925,
+      "offset": 8966,
       "length": 6,
       "value": "\"zone\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8987,
+      "offset": 9028,
       "length": 8,
       "value": "\"device\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9059,
+      "offset": 9100,
       "length": 10,
       "value": "\"language\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9125,
+      "offset": 9166,
       "length": 10,
       "value": "\"location\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9158,
+      "offset": 9199,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9190,
+      "offset": 9231,
       "length": 8,
       "value": "\"screen\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9256,
+      "offset": 9297,
       "length": 7,
       "value": "\"media\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9320,
+      "offset": 9361,
       "length": 9,
       "value": "\"battery\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9388,
+      "offset": 9429,
       "length": 12,
       "value": "\"connection\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9486,
+      "offset": 9527,
       "length": 11,
       "value": "\"detection\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9570,
+      "offset": 9611,
       "length": 20,
       "value": "\"tutSenseIdentifier\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9666,
+      "offset": 9707,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9722,
+      "offset": 9763,
       "length": 8,
       "value": "\"apiKey\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9755,
+      "offset": 9796,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9783,
+      "offset": 9824,
       "length": 11,
       "value": "\"senseInfo\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 9822,
+      "offset": 9863,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9853,
+      "offset": 9894,
       "length": 5,
       "value": "\"tag\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9880,
+      "offset": 9921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10028,
+      "offset": 10069,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10068,
+      "offset": 10109,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10108,
+      "offset": 10149,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10157,
+      "offset": 10198,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10184,
+      "offset": 10225,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10261,
+      "offset": 10302,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10285,
+      "offset": 10326,
       "length": 22,
       "value": "\"x-package-identifier\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10552,
+      "offset": 10593,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10581,
+      "offset": 10622,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 10739,
+      "offset": 10780,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10844,
+      "offset": 10885,
       "length": 26,
       "value": "\"Failed to serialize JSON\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11471,
+      "offset": 11512,
       "length": 47,
       "value": "\"Request failed: \""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11517,
+      "offset": 11558,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11712,
+      "offset": 11753,
       "length": 30,
       "value": "\"Invalid response from server\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 12429,
+      "offset": 12470,
       "length": 18,
       "value": "\"No data received\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 12644,
+      "offset": 12685,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 12721,
+      "offset": 12762,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 13177,
+      "offset": 13218,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13265,
+      "offset": 13306,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13405,
+      "offset": 13446,
       "length": 10,
       "value": "\"sense_id\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13501,
+      "offset": 13542,
       "length": 12,
       "value": "\"request_id\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13613,
+      "offset": 13654,
       "length": 10,
       "value": "\"sense_id\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13714,
+      "offset": 13755,
       "length": 12,
       "value": "\"request_id\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13899,
+      "offset": 13940,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 14026,
+      "offset": 14067,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14134,
+      "offset": 14175,
       "length": 4,
       "value": "\"{}\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 14445,
+      "offset": 14486,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14531,
+      "offset": 14572,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14642,
+      "offset": 14683,
       "length": 18,
       "value": "\"Unknown Response\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14920,
+      "offset": 14961,
       "length": 51,
       "value": "\"Error parsing JSON: \""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14970,
+      "offset": 15011,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 15227,
+      "offset": 15268,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15589,
+      "offset": 15630,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 15663,
+      "offset": 15704,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15681,
+      "offset": 15722,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 15744,
+      "offset": 15785,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15762,
+      "offset": 15803,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17192,
+      "offset": 17233,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 17266,
+      "offset": 17307,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17284,
+      "offset": 17325,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 17347,
+      "offset": 17388,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17365,
+      "offset": 17406,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18683,
+      "offset": 18724,
       "length": 10,
       "value": "\"deviceId\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18804,
+      "offset": 18845,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18848,
+      "offset": 18889,
       "length": 14,
       "value": "\"isRealDevice\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18900,
+      "offset": 18941,
       "length": 14,
       "value": "\"touchSupport\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 18917,
+      "offset": 18958,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18935,
+      "offset": 18976,
       "length": 14,
       "value": "\"deviceMemory\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18952,
+      "offset": 18993,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 18995,
+      "offset": 19036,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 19000,
+      "offset": 19041,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19006,
+      "offset": 19047,
       "length": 2,
       "value": "\" mb\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19024,
+      "offset": 19065,
       "length": 4,
       "value": "\"os\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19051,
+      "offset": 19092,
       "length": 26,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19076,
+      "offset": 19117,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19091,
+      "offset": 19132,
       "length": 13,
       "value": "\"deviceTypes\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19128,
+      "offset": 19169,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19144,
+      "offset": 19185,
       "length": 7,
       "value": "\"board\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19154,
+      "offset": 19195,
       "length": 7,
       "value": "\"Apple\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19175,
+      "offset": 19216,
       "length": 7,
       "value": "\"brand\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19184,
+      "offset": 19225,
       "length": 7,
       "value": "\"Apple\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19206,
+      "offset": 19247,
       "length": 14,
       "value": "\"manufacturer\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19223,
+      "offset": 19264,
       "length": 7,
       "value": "\"Apple\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19244,
+      "offset": 19285,
       "length": 7,
       "value": "\"model\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19279,
+      "offset": 19320,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19288,
+      "offset": 19329,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19308,
+      "offset": 19349,
       "length": 16,
       "value": "\"localIpAddress\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19355,
+      "offset": 19396,
       "length": 13,
       "value": "\"dataEnabled\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19400,
+      "offset": 19441,
       "length": 13,
       "value": "\"networkType\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19446,
+      "offset": 19487,
       "length": 13,
       "value": "\"dataRoaming\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19498,
+      "offset": 19539,
       "length": 19,
       "value": "\"memoryInformation\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19539,
+      "offset": 19580,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19555,
+      "offset": 19596,
       "length": 15,
       "value": "\"kernelVersion\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19605,
+      "offset": 19646,
       "length": 13,
       "value": "\"countryInfo\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19641,
+      "offset": 19682,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19657,
+      "offset": 19698,
       "length": 15,
       "value": "\"systemStorage\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19676,
+      "offset": 19717,
       "length": 7,
       "value": "\"total\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19702,
+      "offset": 19743,
       "length": 6,
       "value": "\"used\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19726,
+      "offset": 19767,
       "length": 6,
       "value": "\"free\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19764,
+      "offset": 19805,
       "length": 20,
       "value": "\"deviceArchitecture\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19814,
+      "offset": 19855,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19830,
+      "offset": 19871,
       "length": 12,
       "value": "\"kernelName\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19864,
+      "offset": 19905,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19880,
+      "offset": 19921,
       "length": 15,
       "value": "\"networkConfig\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19937,
+      "offset": 19978,
       "length": 18,
       "value": "\"biometricEnabled\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19993,
+      "offset": 20034,
       "length": 17,
       "value": "\"passcodeEnabled\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20046,
+      "offset": 20087,
       "length": 14,
       "value": "\"isAudioMuted\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20091,
+      "offset": 20132,
       "length": 10,
       "value": "\"cpuCount\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20131,
+      "offset": 20172,
       "length": 9,
       "value": "\"cpuType\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20159,
+      "offset": 20200,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20175,
+      "offset": 20216,
       "length": 10,
       "value": "\"isOnCall\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20212,
+      "offset": 20253,
       "length": 10,
       "value": "\"cpuSpeed\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20242,
+      "offset": 20283,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20258,
+      "offset": 20299,
       "length": 20,
       "value": "\"usbDebuggingStatus\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20315,
+      "offset": 20356,
       "length": 12,
       "value": "\"deviceADID\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20349,
+      "offset": 20390,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20365,
+      "offset": 20406,
       "length": 16,
       "value": "\"cloudContainer\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20426,
+      "offset": 20467,
       "length": 14,
       "value": "\"systemUptime\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20474,
+      "offset": 20515,
       "length": 15,
       "value": "\"isiOSAppOnMac\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20528,
+      "offset": 20569,
       "length": 17,
       "value": "\"proximitySensor\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20589,
+      "offset": 20630,
       "length": 14,
       "value": "\"lastBootTime\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20636,
+      "offset": 20677,
       "length": 11,
       "value": "\"sessionID\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20674,
+      "offset": 20715,
       "length": 16,
       "value": "\"accessaryCount\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20722,
+      "offset": 20763,
       "length": 25,
       "value": "\"isMultitaskingSupported\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20803,
+      "offset": 20844,
       "length": 22,
       "value": "\"accessibilityEnabled\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20875,
+      "offset": 20916,
       "length": 22,
       "value": "\"developerModeEnabled\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20937,
+      "offset": 20978,
       "length": 12,
       "value": "\"deviceHash\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21013,
+      "offset": 21054,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21029,
+      "offset": 21070,
       "length": 21,
       "value": "\"screenBeingMirrored\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21115,
+      "offset": 21156,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21154,
+      "offset": 21195,
       "length": 12,
       "value": "\"model_name\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21442,
+      "offset": 21483,
       "length": 18,
       "value": "\"screenBrightness\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21508,
+      "offset": 21549,
       "length": 19,
       "value": "\"displayResolution\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21529,
+      "offset": 21570,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21544,
+      "offset": 21585,
       "length": 1,
       "value": "\" x \""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21562,
+      "offset": 21603,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21577,
+      "offset": 21618,
       "length": 12,
       "value": "\"colorDepth\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21627,
+      "offset": 21668,
       "length": 13,
       "value": "\"screenWidth\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21668,
+      "offset": 21709,
       "length": 14,
       "value": "\"screenHeight\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21711,
+      "offset": 21752,
       "length": 18,
       "value": "\"screenPixelRatio\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21751,
+      "offset": 21792,
       "length": 12,
       "value": "\"screenSize\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21782,
+      "offset": 21823,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21798,
+      "offset": 21839,
       "length": 19,
       "value": "\"screenOrientation\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21944,
+      "offset": 21985,
       "length": 15,
       "value": "\"audioHardware\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 21962,
+      "offset": 22003,
       "length": 21,
       "value": "[(\"hasSpeakers\", true)]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21997,
+      "offset": 22038,
       "length": 20,
       "value": "\"microPhoneHardware\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 22020,
+      "offset": 22061,
       "length": 24,
       "value": "[(\"hasMicrophone\", true)]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22058,
+      "offset": 22099,
       "length": 15,
       "value": "\"videoHardware\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 22076,
+      "offset": 22117,
       "length": 20,
       "value": "[(\"hasWebCam\", true)]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22201,
+      "offset": 22242,
       "length": 20,
       "value": "\"batteryTemperature\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22266,
+      "offset": 22307,
       "length": 16,
       "value": "\"deviceCharging\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22311,
+      "offset": 22352,
       "length": 14,
       "value": "\"batteryLevel\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22460,
+      "offset": 22501,
       "length": 9,
       "value": "\"isFrida\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22502,
+      "offset": 22543,
       "length": 14,
       "value": "\"isJailbroken\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22547,
+      "offset": 22588,
       "length": 13,
       "value": "\"isSimulator\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22597,
+      "offset": 22638,
       "length": 5,
       "value": "\"sim\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22632,
+      "offset": 22673,
       "length": 5,
       "value": "\"vpn\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22669,
+      "offset": 22710,
       "length": 15,
       "value": "\"installedApps\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 22833,
+      "offset": 22874,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22941,
+      "offset": 22982,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22986,
+      "offset": 23027,
       "length": 10,
       "value": "\"timezone\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23024,
+      "offset": 23065,
       "length": 17,
       "value": "\"timezoneCountry\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23074,
+      "offset": 23115,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23198,
+      "offset": 23239,
       "length": 15,
       "value": "\"effectiveType\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Sense 2.0\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23242,
+      "offset": 23283,
       "length": 6,
       "value": "\"type\""
     },

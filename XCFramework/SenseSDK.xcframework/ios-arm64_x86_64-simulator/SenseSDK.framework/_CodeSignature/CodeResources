@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		SX08HI0Q0SwZsbYt/sSXTYQKC2o=
+		HXsvSWojAReOj8dYLmHNp8RigS0=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sWOH5ng9TZg0uvHO1FSC5qOikg4=
+		Fx7D4lkEkkVGR6OnzGvU6necTmk=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x+WsRiQovPJo2wyDpwNNo4OKYdeREWUlG2kGLrK+EJo=
+			jxRDMvRXzpADDcWmfs6+qP8nFOHyiFMDAbxrWZU0lBE=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W+GXW1e88XO0AU6RwMOsBlsb4Zjw55zbbKeX8Kmuh0E=
+			lSkvnzDfSRMNxb+jvaUuQS8uO3wWy8mSzZEQbMV/LuY=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
