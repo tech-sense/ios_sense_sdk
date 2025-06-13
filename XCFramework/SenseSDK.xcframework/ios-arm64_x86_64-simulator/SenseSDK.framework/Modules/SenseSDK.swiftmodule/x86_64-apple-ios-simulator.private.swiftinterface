@@ -56,16 +56,6 @@ import _SwiftConcurrencyShims
   public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class DeviceDetail {
-  public func getDeviceDetail() -> Swift.Dictionary<Swift.String, Any>
-  public func getScreen() -> Swift.Dictionary<Swift.String, Any>
-  public func getMedia() -> Swift.Dictionary<Swift.String, Any>
-  public func getBattery() -> Swift.Dictionary<Swift.String, Any>
-  public func getDetection(data: Any) -> Swift.Dictionary<Swift.String, Any>
-  public func getZone() -> Swift.Dictionary<Swift.String, Any>
-  public func getConnection(networkType: Any) -> Swift.Dictionary<Swift.String, Any>
-  @objc deinit
-}
 public struct KeystrokeData {
 }
 public class SenseConfig {
@@ -74,6 +64,7 @@ public class SenseConfig {
   public var allowGeoLocation: Swift.Bool?
   public var tag: Swift.String?
   public var sessionId: Swift.String?
+  public var metaInfo: [Swift.String : Any]
   public init()
   @objc deinit
 }

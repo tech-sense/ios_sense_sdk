@@ -8,7 +8,7 @@ Sense is a device intelligence and identification tool. This tool collects a com
 
 ### Step 1 - Installation
 ```
-pod 'SenseSDK', '~> 0.0.3'
+pod 'SenseSDK', '~> 0.0.4'
 pod update
 ```
 ### Step 2 - Import SDK
@@ -25,6 +25,10 @@ To initialize the SDK add the below line of code with the public key you retriev
         senseConfig.allowGeoLocation = false // true or false
         senseConfig.tag = "" // String whatever you need like Home
         senseConfig.sessionId = "" //Optional used for Workflow
+        senseConfig.metaInfo = [
+            "phone": "9xxxxxxxxx",
+            "name": "xxxxxxxxxxx"
+        ] // A collection of key-value pairs intended for storing supplementary data related to the request. The set supports up to 15 pairs, with each key and value limited to a maximum of 256 characters.
         Sense.initSDK(senseConfig: senseConfig, withDelegate: self)
     }
 
@@ -65,6 +69,18 @@ You have to add this permission in Info.plist to get Device Location Information
 <string>Require to get user location</string>
 ```
 
+You have to add this permission in Info.plist to get Remote Access and Meeting Applications.
+```
+<!-- Remote Access Apps -->
+<string>tvcontrol1</string> <!-- TeamViewer -->
+<string>anydesk</string> <!-- AnyDesk -->
+<string>rustdesk</string> <!-- RustDesk -->
+<!-- Meeting Apps -->
+<string>zoommtg</string> <!-- Zoom -->
+<string>msteams</string> <!-- Microsoft Teams -->
+<string>slack</string> <!-- Slack -->
+<string>skype</string> <!-- Skype -->
+```
 ### Step 6 - If you need to know Installed Applications in our SDK, kindly update your Info.plist like below. You can add those apps that you need to check whether it's installed or not.
 
 ```

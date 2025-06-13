@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ZQeCajt6uhZKSF+/2IiQObDe68o=
+		OURxWSbFdgl3PNSi9CRpZ6dUgcM=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		uMXUIaTxDi0a87s3dwqqGsivuP8=
+		XXJ/1C1UVat5TZf3mR3PweKJjrI=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		uMXUIaTxDi0a87s3dwqqGsivuP8=
+		XXJ/1C1UVat5TZf3mR3PweKJjrI=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hhVjszqKCeN3JXI43ItWLpWYrZU=
+		8H/Ek+h3zgmpFwVaX1/1Uu0AiZI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNQQfXvKYn9k644Od9IqYkT4B8Gim44rtET7t4bNZnI=
+			Z5OAk28odmNfEm8vAdoDesd6f+G4Hn7b3lOOBZmU+XA=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9QJVsHpcMkZxy/lpT97fWCBO6uPz94fnTpWHC8hummc=
+			S+uw2kc+so+75CpN7SecnRkS0eoCR8axOblJ4bCGbxc=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9QJVsHpcMkZxy/lpT97fWCBO6uPz94fnTpWHC8hummc=
+			S+uw2kc+so+75CpN7SecnRkS0eoCR8axOblJ4bCGbxc=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v3AtwCjFkSDVxVuUsVyyGxMGmNKxOc0xCxXacpShijU=
+			n1qKO8eTGGigXfW5pyEdE3K6db4AnWSEJkKAvAgEhlc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
