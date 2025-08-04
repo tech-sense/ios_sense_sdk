@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		geRLKptHenblaqAbPAO7lpTsqzw=
+		1vAIIwE5kyz4NR8Q1PRot6iGV2c=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FQg6Z3tOYgWT6ufU4233WpXfnMw=
+		zjfNcyCKEC+tVa6D79uifnCPFYU=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7s8FnAlPjcroni8gffhmbAjaXdE=
+		MlMdcVibsPok6x3UiZ7unZe2IDY=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jQRm/pQOdW9tlF5teJftC9JYwx4=
+		zjfNcyCKEC+tVa6D79uifnCPFYU=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,15 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hskLCenGwBT7XERZGG92O3JlAHM=
+		jnSQD6ZhjC2Tb4WCREtqOPRlyEY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		g+iRoLtAUjRgXuiBdB8mOI4pSJc=
+		</data>
+		<key>cert.cer</key>
+		<data>
+		PO9qfxlroZqiYuTeXipPFu4GLJI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IbdNakVhQD1qNqt+zKZIa75Bju2UEI41KFFg3AtFFR0=
+			Oos+BdEx+Qn9RKIUmnIVSHvCs2B4WjAGZPSHeeTy+IE=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LsQ774RHD4uOksIFEM7hs5qWGrnaxnD5rPNncak92IA=
+			L546+3GYPvE12WGk+rocJ5iwtHfXSVni85gOIUX5bio=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ilyJJwwZE5m1wb9mo/x4tWjn+zd/2Kityr6gFVxWaFQ=
+			Oos+BdEx+Qn9RKIUmnIVSHvCs2B4WjAGZPSHeeTy+IE=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7vBuTvZVTVFzNyLxTwwMgUoYnieH4PF7iQtAwqoqzm8=
+			hrxuVLz+5ZhKKKlngV+FjYDKPpfa1BpRKKhmkMKCcJM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			eZT7gjx7kCmxDyXhCGtyjg8VWhkCqSatQ5OSE3T1pss=
+			</data>
+		</dict>
+		<key>cert.cer</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9M7acegn2dpQR31NkmU0Tw3qp18i7KEUX7v0fBBT+EU=
 			</data>
 		</dict>
 	</dict>
