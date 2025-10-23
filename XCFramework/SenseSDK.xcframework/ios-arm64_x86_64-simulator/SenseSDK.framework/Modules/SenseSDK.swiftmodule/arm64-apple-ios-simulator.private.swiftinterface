@@ -53,7 +53,7 @@ import _SwiftConcurrencyShims
   public static func initKeyStrokeBehaviour(for textFields: [UIKit.UITextField])
   public static func initScrollBehaviour(for scrollViews: [UIKit.UIScrollView])
   public static func initTouchBehaviour(for view: UIKit.UIView)
-  public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
+  public static func getSenseDetails(viewController: UIKit.UIViewController, withDelegate: (any SenseSDK.SenseDelegate)?)
   @objc deinit
 }
 public struct KeystrokeData {
@@ -64,9 +64,16 @@ public class SenseConfig {
   public var allowGeoLocation: Swift.Bool?
   public var tag: Swift.String?
   public var sessionId: Swift.String?
-  public var metaInfo: [Swift.String : Any]
+  public var metaInfo: [Swift.String : Any]?
   public init()
   @objc deinit
 }
 public func screenSize() -> Swift.String?
 public var senseConfig: SenseSDK.SenseConfig?
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SecureContainerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) final public let contentView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) final public let screenshotLabel: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let screenshotImageView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
