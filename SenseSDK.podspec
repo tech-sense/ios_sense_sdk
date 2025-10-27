@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SenseSDK'
-  s.version      = '0.0.8'
+  s.version      = '0.0.9'
   s.summary      = 'Sense iOS SDK'
   s.description  = <<-DESC
                   Sense is a device intelligence and identification tool. This tool collects a comprehensive set of attributes unique to a device or browser, forming an identity that will help businesses.
@@ -23,5 +23,5 @@ Pod::Spec.new do |s|
   s.author       = { "Sense" => "tech@getsense.co" }
   s.source       = { :git => "https://github.com/tech-sense/ios_sense_sdk.git", :tag => s.version.to_s }
   s.vendored_frameworks = 'XCFramework/SenseSDK.xcframework'
-  s.platform     = :ios, '13.0'
+  s.platform     = :ios, '12.0'
 end
