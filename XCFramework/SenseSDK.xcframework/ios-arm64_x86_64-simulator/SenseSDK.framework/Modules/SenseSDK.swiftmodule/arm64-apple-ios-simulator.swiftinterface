@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SenseSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SenseSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AdSupport
 import AppTrackingTransparency
@@ -12,7 +12,6 @@ import Contacts
 import CoreBluetooth
 import CoreGraphics
 import CoreLocation
-import CoreMotion
 import CoreTelephony
 import CryptoKit
 import Darwin
@@ -40,23 +39,12 @@ import _SwiftConcurrencyShims
   @objc func onFailure(message: Swift.String)
   @objc func onSuccess(data: Swift.String)
 }
-@objc public protocol SenseBehaviourDelegate {
-  @objc func onFailureBehaviour(message: Swift.String)
-  @objc func onSuccessBehaviour(data: Swift.String)
-}
 @objc @_inheritsConvenienceInitializers public class Sense : ObjectiveC.NSObject {
   @objc override dynamic public init()
   public func initializeLocationManager()
   public static func initSDK(senseConfig: SenseSDK.SenseConfig?, withDelegate: (any SenseSDK.SenseDelegate)?)
-  public static func getScrollData() -> [Any]
-  public static func getBehaviourData(withDelegate behaviourDelegate: (any SenseSDK.SenseBehaviourDelegate)?)
-  public static func initKeyStrokeBehaviour(for textFields: [UIKit.UITextField])
-  public static func initScrollBehaviour(for scrollViews: [UIKit.UIScrollView])
-  public static func initTouchBehaviour(for view: UIKit.UIView)
   public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
   @objc deinit
-}
-public struct KeystrokeData {
 }
 public class SenseConfig {
   public var apiKey: Swift.String?
@@ -69,11 +57,12 @@ public class SenseConfig {
   @objc deinit
 }
 public func screenSize() -> Swift.String?
+public func showOfflineAlert()
 public var senseConfig: SenseSDK.SenseConfig?
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SecureContainerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) final public let contentView: UIKit.UIView
-  @_Concurrency.MainActor(unsafe) final public let screenshotLabel: UIKit.UILabel
-  @_Concurrency.MainActor(unsafe) final public let screenshotImageView: UIKit.UIImageView
-  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, apiKey: Swift.String?)
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class SecureContainerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public let contentView: UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency final public let screenshotLabel: UIKit.UILabel
+  @_Concurrency.MainActor @preconcurrency final public let screenshotImageView: UIKit.UIImageView
+  @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, apiKey: Swift.String?)
   @objc deinit
 }
