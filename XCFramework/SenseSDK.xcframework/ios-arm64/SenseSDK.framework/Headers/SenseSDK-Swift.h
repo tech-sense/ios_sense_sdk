@@ -281,10 +281,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #endif
@@ -321,23 +319,54 @@ SWIFT_AVAILABILITY(ios,introduced=13.0)
 - (void)URLSession:(NSURLSession * _Nonnull)session didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 @end
 
-@class NSCoder;
-SWIFT_CLASS("_TtC8SenseSDK19SecureContainerView")
-@interface SecureContainerView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@end
-
-SWIFT_CLASS("_TtC8SenseSDK5Sense")
-@interface Sense : NSObject
+SWIFT_CLASS("_TtC8SenseSDK17ScreenRASPManager")
+@interface ScreenRASPManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol SenseRASPDelegate;
+@class SenseConfig;
+@protocol SenseDelegate;
+SWIFT_CLASS("_TtC8SenseSDK5Sense")
+@interface Sense : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <SenseRASPDelegate> _Nullable senseRASPdegate;)
++ (id <SenseRASPDelegate> _Nullable)senseRASPdegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setSenseRASPdegate:(id <SenseRASPDelegate> _Nullable)value;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)initializeLocationManager;
++ (void)initSDKWithSenseConfig:(SenseConfig * _Nullable)senseConfig withDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_METHOD_FAMILY(none);
++ (void)getSenseDetailsWithDelegate:(id <SenseDelegate> _Nullable)withDelegate;
+@end
+
 @class NSString;
+SWIFT_CLASS("_TtC8SenseSDK11SenseConfig")
+@interface SenseConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable apiKey;
+@property (nonatomic, copy) NSString * _Nullable tag;
+@property (nonatomic, copy) NSString * _Nullable sessionId;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metaInfo;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 SWIFT_PROTOCOL("_TtP8SenseSDK13SenseDelegate_")
-@protocol SenseDelegate
+@protocol SenseDelegate <NSObject>
 - (void)onFailureWithMessage:(NSString * _Nonnull)message;
 - (void)onSuccessWithData:(NSString * _Nonnull)data;
+@end
+
+SWIFT_PROTOCOL("_TtP8SenseSDK17SenseRASPDelegate_")
+@protocol SenseRASPDelegate <NSObject>
+- (void)onJailbreakDetectedWithIsOn:(BOOL)isOn;
+- (void)onFridaDetectedWithIsOn:(BOOL)isOn;
+- (void)onSimulatorDetectedWithIsOn:(BOOL)isOn;
+- (void)onSimNotFoundWithIsOn:(BOOL)isOn;
+- (void)onVpnDetectedWithIsOn:(BOOL)isOn;
+- (void)onProxyDetectedWithIsOn:(BOOL)isOn;
+- (void)onFaceIdChangedWithIsOn:(BOOL)isOn;
+- (void)onScreenMirroringDetectedWithIsOn:(BOOL)isOn;
+- (void)onScreenSharingAppsDetectedWithIsOn:(BOOL)isOn;
+- (void)onScreenRecordingDetectedWithIsOn:(BOOL)isOn;
+- (void)onWifiDetectedWithIsOn:(BOOL)isOn;
 @end
 
 #endif

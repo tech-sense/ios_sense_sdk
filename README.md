@@ -8,7 +8,7 @@ Sense is a device intelligence and identification tool. This tool collects a com
 
 ### Step 1 - Installation
 ```
-pod 'SenseSDK', '~> 1.0.1'
+pod 'SenseSDK', '~> 1.0.2'
 pod update
 ```
 ### Step 2 - Import SDK
@@ -21,7 +21,7 @@ To initialize the SDK add the below line of code with the public key you retriev
     func initiateSense(){
         let senseConfig = SenseConfig()
         senseConfig.apiKey = "Your Unique Public API Key"
-        senseConfig.senseInfo = false // true or false
+        senseConfig.seseInfo = false // true or false
         senseConfig.allowGeoLocation = false // true or false
         senseConfig.tag = "" // String whatever you need like Home
         senseConfig.sessionId = "" //Optional used for Workflow
@@ -95,43 +95,3 @@ You have to add this permission in Info.plist to get Remote Access and Meeting A
 
 ```
 
-## To get Behaviour Data for Keystrokes, Mouse Movements, Scroll Metrics, Touch Metrics, you can add the below methods to initialize it.
-
-### For Keystrokes, pass your textfields as arguments like below
-
-```
-@IBOutlet weak var txtUsername: UITextField
-@IBOutlet weak var txtPassword: UITextField
-
-Sense.initKeyStrokeBehaviour(for: [txtUsername, txtPassword]);
-```
-
-### For Scroll Metrics
-
-```
-@IBOutlet weak var scrollView: UIScrollView
-
-Sense.initScrollBehaviour(for: [scrollView]);
-```
-
-### For Touch Metrics
-
-```
-Sense.initTouchBehaviour(for: self.view)
-```
-
-### To get Behaviour Data, Call below method to get it
-
-```
-Sense.getBehaviourData(withDelegate: self)
-
-extension ViewController: SenseBehaviourDelegate{
-    func onFailureBehaviour(message: String) {
-        print("Failure data")
-    }
-
-    func onSuccessBehaviour(data: String) {
-        print("Success data")
-    }
-}
-```
