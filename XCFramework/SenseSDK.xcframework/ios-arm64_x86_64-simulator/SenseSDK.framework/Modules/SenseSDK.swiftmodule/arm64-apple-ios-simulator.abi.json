@@ -511,13 +511,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SenseSDK"
-      },
-      {
-        "kind": "Import",
         "name": "MachO",
         "printedName": "MachO",
         "declKind": "Import",
@@ -634,6 +627,118 @@
         "printedName": "notify",
         "declKind": "Import",
         "moduleName": "SenseSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "SenseSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MemoryProtectionManager",
+        "printedName": "MemoryProtectionManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MemoryProtectionManager",
+                "printedName": "SenseSDK.MemoryProtectionManager",
+                "usr": "s:8SenseSDK23MemoryProtectionManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SenseSDK23MemoryProtectionManagerC6sharedACvpZ",
+            "mangledName": "$s8SenseSDK23MemoryProtectionManagerC6sharedACvpZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MemoryProtectionManager",
+                    "printedName": "SenseSDK.MemoryProtectionManager",
+                    "usr": "s:8SenseSDK23MemoryProtectionManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK23MemoryProtectionManagerC6sharedACvgZ",
+                "mangledName": "$s8SenseSDK23MemoryProtectionManagerC6sharedACvgZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "checkMemoryTampering",
+            "printedName": "checkMemoryTampering()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK23MemoryProtectionManagerC05checkC9TamperingSbyF",
+            "mangledName": "$s8SenseSDK23MemoryProtectionManagerC05checkC9TamperingSbyF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8SenseSDK23MemoryProtectionManagerC",
+        "mangledName": "$s8SenseSDK23MemoryProtectionManagerC",
+        "moduleName": "SenseSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Function",
@@ -1369,6 +1474,221 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "generateSwizzleReport",
+        "printedName": "generateSwizzleReport()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8SenseSDK21generateSwizzleReportSbyF",
+        "mangledName": "$s8SenseSDK21generateSwizzleReportSbyF",
+        "moduleName": "SenseSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "captureOriginalMethods",
+        "printedName": "captureOriginalMethods()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8SenseSDK22captureOriginalMethodsyyF",
+        "mangledName": "$s8SenseSDK22captureOriginalMethodsyyF",
+        "moduleName": "SenseSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrivacyManager",
+        "printedName": "PrivacyManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacyManager",
+                "printedName": "SenseSDK.PrivacyManager",
+                "usr": "s:8SenseSDK14PrivacyManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SenseSDK14PrivacyManagerC6sharedACvpZ",
+            "mangledName": "$s8SenseSDK14PrivacyManagerC6sharedACvpZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PrivacyManager",
+                    "printedName": "SenseSDK.PrivacyManager",
+                    "usr": "s:8SenseSDK14PrivacyManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK14PrivacyManagerC6sharedACvgZ",
+                "mangledName": "$s8SenseSDK14PrivacyManagerC6sharedACvgZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK14PrivacyManagerC5startyyF",
+            "mangledName": "$s8SenseSDK14PrivacyManagerC5startyyF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addPrivacyScreen",
+            "printedName": "addPrivacyScreen(window:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK14PrivacyManagerC03addC6Screen6windowySo8UIWindowCSg_tF",
+            "mangledName": "$s8SenseSDK14PrivacyManagerC03addC6Screen6windowySo8UIWindowCSg_tF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removePrivacyScreen",
+            "printedName": "removePrivacyScreen(window:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK14PrivacyManagerC06removeC6Screen6windowySo8UIWindowCSg_tF",
+            "mangledName": "$s8SenseSDK14PrivacyManagerC06removeC6Screen6windowySo8UIWindowCSg_tF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8SenseSDK14PrivacyManagerC",
+        "mangledName": "$s8SenseSDK14PrivacyManagerC",
+        "moduleName": "SenseSDK",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -2764,6 +3084,186 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onMockLocationDetected",
+            "printedName": "onMockLocationDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onMockLocationDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP22onMockLocationDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSystemProxyDetected",
+            "printedName": "onSystemProxyDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onSystemProxyDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP21onSystemProxyDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSystemVPNDetected",
+            "printedName": "onSystemVPNDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onSystemVPNDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP19onSystemVPNDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAutomatedInstall",
+            "printedName": "onAutomatedInstall(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onAutomatedInstallWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP18onAutomatedInstall4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSandboxEnvironment",
+            "printedName": "onSandboxEnvironment(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onSandboxEnvironmentWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP20onSandboxEnvironment4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTimeZoneMismatch",
+            "printedName": "onTimeZoneMismatch(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onTimeZoneMismatchWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP18onTimeZoneMismatch4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -2798,6 +3298,162 @@
         "name": "Sense",
         "printedName": "Sense",
         "children": [
+          {
+            "kind": "Var",
+            "name": "isAlertShowing",
+            "printedName": "isAlertShowing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SenseSDK@objc(cs)Sense(cpy)isAlertShowing",
+            "mangledName": "$s8SenseSDK0A0C14isAlertShowingSbvpZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)Sense(cm)isAlertShowing",
+                "mangledName": "$s8SenseSDK0A0C14isAlertShowingSbvgZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)Sense(cm)setIsAlertShowing:",
+                "mangledName": "$s8SenseSDK0A0C14isAlertShowingSbvsZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A0C14isAlertShowingSbvMZ",
+                "mangledName": "$s8SenseSDK0A0C14isAlertShowingSbvMZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sense",
+            "printedName": "sense",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Sense",
+                "printedName": "SenseSDK.Sense",
+                "usr": "c:@M@SenseSDK@objc(cs)Sense"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SenseSDK@objc(cs)Sense(cpy)sense",
+            "mangledName": "$s8SenseSDK0A0C5senseACvpZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sense",
+                    "printedName": "SenseSDK.Sense",
+                    "usr": "c:@M@SenseSDK@objc(cs)Sense"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)Sense(cm)sense",
+                "mangledName": "$s8SenseSDK0A0C5senseACvgZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "senseRASPdegate",
@@ -3056,6 +3712,37 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "screenShield",
+            "printedName": "screenShield(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "usr": "c:objc(cs)UIWindow"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(cs)Sense(cm)screenShieldFor:",
+            "mangledName": "$s8SenseSDK0A0C12screenShield3forySo8UIWindowC_tFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -4137,6 +4824,76 @@
           },
           {
             "kind": "Function",
+            "name": "addPrivacyScreen",
+            "printedName": "addPrivacyScreen(window:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A12ScreenShieldC010addPrivacyC06windowySo8UIWindowCSg_tF",
+            "mangledName": "$s8SenseSDK0A12ScreenShieldC010addPrivacyC06windowySo8UIWindowCSg_tF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removePrivacyScreen",
+            "printedName": "removePrivacyScreen(window:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A12ScreenShieldC013removePrivacyC06windowySo8UIWindowCSg_tF",
+            "mangledName": "$s8SenseSDK0A12ScreenShieldC013removePrivacyC06windowySo8UIWindowCSg_tF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "enableScreenProtection",
             "printedName": "enableScreenProtection(for:)",
             "children": [
@@ -4639,101 +5396,150 @@
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "Array",
+      "offset": 821,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "Array",
+      "offset": 1918,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "Array",
+      "offset": 1967,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2060,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "BooleanLiteral",
-      "offset": 4733,
+      "offset": 20099,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Dictionary",
-      "offset": 19414,
+      "offset": 34613,
       "length": 3379,
       "value": "[(\"iPhone1,1\", 0.412), (\"iPhone1,2\", 0.412), (\"iPhone2,1\", 0.600), (\"iPhone3,1\", 0.800), (\"iPhone3,2\", 0.800), (\"iPhone3,3\", 0.800), (\"iPhone4,1\", 0.800), (\"iPhone5,1\", 1.3), (\"iPhone5,2\", 1.3), (\"iPhone5,3\", 1.3), (\"iPhone5,4\", 1.3), (\"iPhone6,1\", 1.3), (\"iPhone6,2\", 1.3), (\"iPhone7,2\", 1.4), (\"iPhone7,1\", 1.4), (\"iPhone8,1\", 1.85), (\"iPhone8,2\", 1.85), (\"iPhone8,4\", 1.85), (\"iPhone9,1\", 2.34), (\"iPhone9,3\", 2.34), (\"iPhone9,2\", 2.34), (\"iPhone9,4\", 2.34), (\"iPhone10,1\", 2.39), (\"iPhone10,4\", 2.39), (\"iPhone10,2\", 2.39), (\"iPhone10,5\", 2.39), (\"iPhone10,3\", 2.39), (\"iPhone10,6\", 2.39), (\"iPhone11,2\", 2.49), (\"iPhone11,4\", 2.49), (\"iPhone11,6\", 2.49), (\"iPhone11,8\", 2.49), (\"iPhone12,1\", 2.65), (\"iPhone12,3\", 2.65), (\"iPhone12,5\", 2.65), (\"iPhone12,8\", 2.65), (\"iPhone13,1\", 3.1), (\"iPhone13,2\", 3.1), (\"iPhone13,3\", 3.1), (\"iPhone13,4\", 3.1), (\"iPhone14,4\", 3.1), (\"iPhone14,5\", 3.1), (\"iPhone14,2\", 3.1), (\"iPhone14,3\", 3.1), (\"iPhone14,6\", 3.22), (\"iPhone14,7\", 3.46), (\"iPhone14,8\", 3.46), (\"iPhone15,2\", 3.46), (\"iPhone15,3\", 3.46), (\"iPhone15,4\", 3.46), (\"iPhone15,5\", 3.46), (\"iPhone16,1\", 3.78), (\"iPhone16,4\", 3.78), (\"iPhone17,1\", 4.00), (\"iPhone17,2\", 4.00), (\"iPhone17,3\", 4.00), (\"iPhone17,4\", 4.00), (\"iPhone18,1\", 4.30), (\"iPhone18,2\", 4.30), (\"iPhone18,3\", 4.30), (\"iPhone18,4\", 4.30)]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 39371,
+      "offset": 55258,
       "length": 8,
       "value": "\"button\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 39404,
+      "offset": 55291,
       "length": 11,
       "value": "\"show_view\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 39439,
+      "offset": 55326,
       "length": 10,
       "value": "\"bg_color\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 39545,
+      "offset": 55432,
       "length": 20,
       "value": "\"overlay_skip_alert\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 39595,
+      "offset": 55482,
       "length": 17,
       "value": "\"alerts_activity\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 40197,
+      "offset": 56084,
       "length": 10,
       "value": "\"bg_color\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 40233,
+      "offset": 56120,
       "length": 12,
       "value": "\"text_color\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 41096,
+      "offset": 56983,
       "length": 10,
       "value": "\"app_name\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 41134,
+      "offset": 57021,
       "length": 14,
       "value": "\"search_param\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 65094,
+      "offset": 80982,
       "length": 32,
       "value": "\"com.Sense-Demo-Sample.uniqueid\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 65179,
+      "offset": 81067,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Array",
-      "offset": 67551,
+      "offset": 83430,
       "length": 124,
       "value": "[\"sha256\/7EYPVXkVjd+TIgsM2tPZLAPytBVEnCkTM8CkRVBfthk=\", \"sha256\/61PTXv\/YSP6E2X+dutwglCkAmM3iUrzrubWvE8UnDbc=\"]"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "Dictionary",
+      "offset": 89082,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 103443,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 103482,
+      "length": 25,
+      "value": "\"com.sdk.firstLaunchDone\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
@@ -4864,112 +5670,112 @@
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10510,
+      "offset": 10730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11251,
+      "offset": 11471,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11283,
+      "offset": 11503,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11316,
+      "offset": 11536,
       "length": 6,
       "value": "\"Skip\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11352,
+      "offset": 11572,
       "length": 7,
       "value": "\"Close\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11474,
+      "offset": 11694,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11508,
+      "offset": 11728,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11667,
+      "offset": 11887,
       "length": 8,
       "value": "\"bottom\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11710,
+      "offset": 11930,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11742,
+      "offset": 11962,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11773,
+      "offset": 11993,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11810,
+      "offset": 12030,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11847,
+      "offset": 12067,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11885,
+      "offset": 12105,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11923,
+      "offset": 12143,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11962,
+      "offset": 12182,
       "length": 2,
       "value": "10"
     },
@@ -5025,203 +5831,238 @@
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2015,
+      "offset": 1491,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1526,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2416,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 2058,
+      "offset": 2459,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2678,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 3049,
+      "offset": 3535,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3175,
+      "offset": 3666,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 37931,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "Array",
-      "offset": 47346,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 47378,
-      "length": 19,
-      "value": "\"OfflineSenseQueue\""
-    },
-    {
-      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 48381,
+      "offset": 46750,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 48427,
+      "offset": 46796,
       "length": 16,
       "value": "\"offline_signal\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 48445,
+      "offset": 46814,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 46847,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 48598,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "Array",
+      "offset": 60427,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 49095,
+      "offset": 60459,
+      "length": 19,
+      "value": "\"OfflineSenseQueue\""
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 61328,
       "length": 17,
       "value": "\"networkRestored\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 50399,
+      "offset": 62595,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 50446,
+      "offset": 62642,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 50708,
+      "offset": 62904,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 53118,
+      "offset": 65350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 53300,
+      "offset": 65532,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 53348,
+      "offset": 65580,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 53394,
+      "offset": 65626,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 53535,
+      "offset": 65804,
       "length": 32,
       "value": "\"ScreenShield.isMirroringActive\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 53445,
+      "offset": 65714,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 53629,
+      "offset": 65898,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 53665,
+      "offset": 65934,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 53706,
+      "offset": 65975,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 53875,
+      "offset": 66144,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 53925,
+      "offset": 66194,
       "length": 28,
       "value": "\"com.screenshield.lockprobe\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 54000,
+      "offset": 66269,
       "length": 23,
       "value": "\"ScreenShieldLockProbe\""
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 54060,
+      "offset": 66329,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 68682,
+      "offset": 83655,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 83690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ippo383\/Documents\/Projects\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 68745,
+      "offset": 83753,
       "length": 2,
       "value": "[]"
     }

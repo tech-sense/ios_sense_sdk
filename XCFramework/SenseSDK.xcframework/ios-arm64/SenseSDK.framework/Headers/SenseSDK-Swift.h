@@ -327,8 +327,14 @@ SWIFT_CLASS("_TtC8SenseSDK17ScreenRASPManager")
 @protocol SenseRASPDelegate;
 @class SenseConfig;
 @protocol SenseDelegate;
+@class UIWindow;
 SWIFT_CLASS("_TtC8SenseSDK5Sense")
 @interface Sense : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isAlertShowing;)
++ (BOOL)isAlertShowing SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsAlertShowing:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Sense * _Nonnull sense;)
++ (Sense * _Nonnull)sense SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <SenseRASPDelegate> _Nullable senseRASPdegate;)
 + (id <SenseRASPDelegate> _Nullable)senseRASPdegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setSenseRASPdegate:(id <SenseRASPDelegate> _Nullable)value;
@@ -336,6 +342,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <SenseRASPDelegate>
 - (void)initializeLocationManager;
 + (void)initSDKWithSenseConfig:(SenseConfig * _Nullable)senseConfig withDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_METHOD_FAMILY(none);
 + (void)getSenseDetailsWithDelegate:(id <SenseDelegate> _Nullable)withDelegate;
++ (void)screenShieldFor:(UIWindow * _Nonnull)window SWIFT_AVAILABILITY(ios,introduced=13.0);
 @end
 
 @class NSString;
@@ -367,6 +374,12 @@ SWIFT_PROTOCOL("_TtP8SenseSDK17SenseRASPDelegate_")
 - (void)onScreenSharingAppsDetectedWithIsOn:(BOOL)isOn;
 - (void)onScreenRecordingDetectedWithIsOn:(BOOL)isOn;
 - (void)onWifiDetectedWithIsOn:(BOOL)isOn;
+- (void)onMockLocationDetectedWithIsOn:(BOOL)isOn;
+- (void)onSystemProxyDetectedWithIsOn:(BOOL)isOn;
+- (void)onSystemVPNDetectedWithIsOn:(BOOL)isOn;
+- (void)onAutomatedInstallWithIsOn:(BOOL)isOn;
+- (void)onSandboxEnvironmentWithIsOn:(BOOL)isOn;
+- (void)onTimeZoneMismatchWithIsOn:(BOOL)isOn;
 @end
 
 #endif

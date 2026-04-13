@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SenseSDK-Swift.h</key>
 		<data>
-		vrh8PF2bhQu1B21cqfCK0ZUvMl8=
+		7qQi1DgPMjnwmzSrv0UR/u7xyJY=
 		</data>
 		<key>Headers/SenseSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Icp5Ac2fh4oZL8D6YB8+RnfXfQ0=
+		i5bD6K5/3BWfkjuEwq1lkgFPx/8=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		H+62nx0OH679WNE7q3j+EX0GWkI=
+		Pc9kvQfMHpTMb5iLG3WyACm3WN0=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		H+62nx0OH679WNE7q3j+EX0GWkI=
+		Pc9kvQfMHpTMb5iLG3WyACm3WN0=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NvsE2U4VLpgpUovqSadpWfhaq/0=
+		6XnW182XA5pn6/ylfCkYyD+7s18=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Icp5Ac2fh4oZL8D6YB8+RnfXfQ0=
+		i5bD6K5/3BWfkjuEwq1lkgFPx/8=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		tBH+5fZ2O4Z1qQHPQnV0FGggaEY=
+		hjUqZi0Ivd1rHx/x/MMKlJEfGZM=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tBH+5fZ2O4Z1qQHPQnV0FGggaEY=
+		hjUqZi0Ivd1rHx/x/MMKlJEfGZM=
 		</data>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q4YN81V9kZlmAp2srretg4QbtKU=
+		YCdsRR215dVySvIdh9kSyej6baE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ME0jWVFJsFaYmde+3SsbJm4nIe8QYFRfeJmOLCzVTYY=
+			vtiHsWkJpZLMIT1nWaEyxf4OWoO6w93mLFP81vKAPJQ=
 			</data>
 		</dict>
 		<key>Headers/SenseSDK.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q+wNAvY1UsRevpsWbUCuM8a5MddJdwqHDOtn2ZVt5o4=
+			kSOZHuTHqAwuxkGvnuap3Jf8ekY8fCiiRG8NP0Ht3zM=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			au3yx9Rs4EE+Ohd6PrvCAOVZiVhbUsFP0MfG5dfoi7Q=
+			iku3PCiASr0xFfSFuERCVzYjKbFtTPtmypzeiW8ujYw=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			au3yx9Rs4EE+Ohd6PrvCAOVZiVhbUsFP0MfG5dfoi7Q=
+			iku3PCiASr0xFfSFuERCVzYjKbFtTPtmypzeiW8ujYw=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xX2PrpcBTCDwjuyKwiM9is3F6idgk3ahXfE4l8/KoP8=
+			wQIy9eqHXuunNA13wmczlAiM9E/HyzFWNQGCe/df6H4=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q+wNAvY1UsRevpsWbUCuM8a5MddJdwqHDOtn2ZVt5o4=
+			kSOZHuTHqAwuxkGvnuap3Jf8ekY8fCiiRG8NP0Ht3zM=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y27xmr7Qyvqa0CLg+wMb2lMj5Kpn6v0WcLaiYSAK8mU=
+			IN4MJZrKVXnhIYOi97RvBgEwtUlvcxA3u8gyhX9N5LU=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y27xmr7Qyvqa0CLg+wMb2lMj5Kpn6v0WcLaiYSAK8mU=
+			IN4MJZrKVXnhIYOi97RvBgEwtUlvcxA3u8gyhX9N5LU=
 			</data>
 		</dict>
 		<key>Modules/SenseSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0N8EaGGxyc6vuZbLEyLOtdizR7FrkP0xBsE/fvRpu8=
+			E16KR1dFphLJJx2k17GT0Hp80LgwIC2pJQD0F/vNKAU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -13,6 +13,7 @@ import Contacts
 import CoreBluetooth
 import CoreGraphics
 import CoreLocation
+import CoreMotion
 import CoreTelephony
 import CryptoKit
 import Darwin
@@ -55,6 +56,11 @@ final public class PinningGuard : ObjectiveC.NSObject {
 extension SenseSDK.PinningGuard : Foundation.URLSessionDelegate {
   @objc final public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
 }
+@_hasMissingDesignatedInitializers public class MemoryProtectionManager {
+  public static let shared: SenseSDK.MemoryProtectionManager
+  public func checkMemoryTampering() -> Swift.Bool
+  @objc deinit
+}
 public func screenSize() -> Swift.String?
 public struct CustomAlert : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -77,6 +83,16 @@ public var senseConfig: SenseSDK.SenseConfig?
   public func startMonitoring()
   public func isScreenMirroringActive() -> Swift.Bool
   @objc override dynamic public init()
+  @objc deinit
+}
+public func generateSwizzleReport() -> Swift.Bool
+public func captureOriginalMethods()
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class PrivacyManager {
+  public static let shared: SenseSDK.PrivacyManager
+  public func start()
+  public func addPrivacyScreen(window: UIKit.UIWindow?)
+  public func removePrivacyScreen(window: UIKit.UIWindow?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class SenseConfig : ObjectiveC.NSObject {
@@ -105,13 +121,23 @@ public var senseConfig: SenseSDK.SenseConfig?
   @objc func onScreenSharingAppsDetected(isOn: Swift.Bool)
   @objc func onScreenRecordingDetected(isOn: Swift.Bool)
   @objc func onWifiDetected(isOn: Swift.Bool)
+  @objc func onMockLocationDetected(isOn: Swift.Bool)
+  @objc func onSystemProxyDetected(isOn: Swift.Bool)
+  @objc func onSystemVPNDetected(isOn: Swift.Bool)
+  @objc func onAutomatedInstall(isOn: Swift.Bool)
+  @objc func onSandboxEnvironment(isOn: Swift.Bool)
+  @objc func onTimeZoneMismatch(isOn: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class Sense : ObjectiveC.NSObject {
+  @objc public static var isAlertShowing: Swift.Bool
+  @objc public static let sense: SenseSDK.Sense
   @objc public static var senseRASPdegate: (any SenseSDK.SenseRASPDelegate)?
   @objc override dynamic public init()
   @objc public func initializeLocationManager()
   @objc public static func initSDK(senseConfig: SenseSDK.SenseConfig?, withDelegate: (any SenseSDK.SenseDelegate)?)
   @objc public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
+  @objc @available(iOS 13.0, *)
+  public static func screenShield(for window: UIKit.UIWindow)
   @objc deinit
 }
 public struct PackageStatus : Swift.Codable {
@@ -151,6 +177,8 @@ final public class SenseScreenShield : @unchecked Swift.Sendable {
   final public func blockMirroring()
   final public func activate(for window: UIKit.UIWindow)
   final public func deactivate()
+  final public func addPrivacyScreen(window: UIKit.UIWindow?)
+  final public func removePrivacyScreen(window: UIKit.UIWindow?)
   final public func enableScreenProtection(for window: UIKit.UIWindow)
 }
 public struct FetchResult {
