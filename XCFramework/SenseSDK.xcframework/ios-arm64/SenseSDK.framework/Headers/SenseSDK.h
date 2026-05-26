@@ -1,6 +1,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <SenseSDK/JailBreakDetector.h>
 
 //! Project version number for SenseSDK.
 FOUNDATION_EXPORT double SenseSDKVersionNumber;
