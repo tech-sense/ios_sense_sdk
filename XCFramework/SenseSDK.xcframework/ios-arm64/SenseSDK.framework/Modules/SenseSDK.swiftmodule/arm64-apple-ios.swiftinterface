@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SenseSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SenseSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AdSupport
 import AppTrackingTransparency
@@ -54,14 +54,18 @@ final public class PinningGuard : ObjectiveC.NSObject {
 }
 @available(iOS 13.0, *)
 extension SenseSDK.PinningGuard : Foundation.URLSessionDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  #endif
 }
 @_hasMissingDesignatedInitializers public class MemoryProtectionManager {
   public static let shared: SenseSDK.MemoryProtectionManager
   public func checkMemoryTampering() -> Swift.Bool
   @objc deinit
 }
+#if compiler(>=5.3) && $NonescapableTypes
 public func screenSize() -> Swift.String?
+#endif
 public struct CustomAlert : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -91,8 +95,12 @@ public func captureOriginalMethods()
 public class PrivacyManager {
   public static let shared: SenseSDK.PrivacyManager
   public func start()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func addPrivacyScreen(window: UIKit.UIWindow?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func removePrivacyScreen(window: UIKit.UIWindow?)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class SenseConfig : ObjectiveC.NSObject {
@@ -134,8 +142,12 @@ public class PrivacyManager {
   @objc public static var senseRASPdegate: (any SenseSDK.SenseRASPDelegate)?
   @objc override dynamic public init()
   @objc public func initializeLocationManager()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initSDK(senseConfig: SenseSDK.SenseConfig?, withDelegate: (any SenseSDK.SenseDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
+  #endif
   @objc @available(iOS 13.0, *)
   public static func screenShield(for window: UIKit.UIWindow)
   @objc deinit
@@ -149,7 +161,9 @@ public enum CaptureReason : Swift.String, Swift.Sendable {
   case iphoneMirroring
   case macPeripheralDetected
   case none
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -177,8 +191,12 @@ final public class SenseScreenShield : @unchecked Swift.Sendable {
   final public func blockMirroring()
   final public func activate(for window: UIKit.UIWindow)
   final public func deactivate()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func addPrivacyScreen(window: UIKit.UIWindow?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func removePrivacyScreen(window: UIKit.UIWindow?)
+  #endif
   final public func enableScreenProtection(for window: UIKit.UIWindow)
 }
 public struct FetchResult {
