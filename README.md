@@ -8,7 +8,7 @@ Sense is a device intelligence and identification tool. This tool collects a com
 
 ### Step 1 - Installation
 ```
-pod 'SenseSDK', '~> 1.0.5'
+pod 'SenseSDK', '~> 1.0.6'
 pod update
 ```
 ### Step 2 - Import SDK
