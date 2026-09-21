@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SenseSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SenseSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AdSupport
 import AppTrackingTransparency
@@ -40,28 +40,97 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import notify
 import ObjectiveC.runtime
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-final public class PinningGuard : ObjectiveC.NSObject {
-  public static let shared: SenseSDK.PinningGuard
-  final public var lastPinningStatus: Swift.Bool {
-    get
-  }
-  final public var lastPinningReason: Swift.String {
-    get
-  }
-  final public func startPinning(withConfig json: [Swift.String : Any], completion: @escaping (Swift.Bool, Swift.String) -> Swift.Void)
+@objc @objcMembers final public class SensePinSet : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @objc final public let host: Swift.String
+  @objc final public let pins: [Swift.String]
+  @objc public init(host: Swift.String, pins: [Swift.String])
   @objc deinit
 }
+@objc @objcMembers final public class SensePinningConfig : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @objc final public var pinSets: [SenseSDK.SensePinSet]?
+  @objc final public var enabled: Swift.Bool
+  @objc final public var requirePinsForAllHosts: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(pinSets: [SenseSDK.SensePinSet]? = nil, enabled: Swift.Bool = false, requirePinsForAllHosts: Swift.Bool = false)
+  #endif
+  @objc deinit
+}
+public typealias SensePinningFallbackRequestBuilder = @Sendable (_ environment: Swift.String, _ apiKey: Swift.String) throws -> Foundation.URLRequest
+public typealias SensePinFailureHandler = @Sendable (_ host: Swift.String) -> Swift.Void
+public enum SensePinningError : Foundation.LocalizedError, Swift.Sendable {
+  case notInitialized
+  case invalidHost(Swift.String)
+  case invalidPin(Swift.String)
+  case duplicateRemoteHost(Swift.String)
+  case fallbackNotConfigured
+  case invalidHTTPResponse
+  case emptyRemotePinSet
+  case expiredRemotePinSet(Swift.String)
+  case invalidSignedManifest
+  case manifestSignatureVerificationFailed
+  case invalidManifestPublicKey
+  case systemTrustFailed(Swift.String)
+  case pinMismatch(Swift.String)
+  case strictHostHasNoPins(Swift.String)
+  case malformedCertificate
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+final public class SenseSSLPinningManager : @unchecked Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func initialize(config: SenseSDK.SensePinningConfig?, apiKey: Swift.String, environment: Swift.String = "live") async throws
+  #endif
+  final public func refreshPins() async throws
+  final public func reportPinFailure() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeURLSession(configuration: Foundation.URLSessionConfiguration = .default, delegateQueue: Foundation.OperationQueue? = nil, onPinFailure: SenseSDK.SensePinFailureHandler? = nil) throws -> Foundation.URLSession
+  #endif
+  @objc deinit
+}
+public enum SensePinningRequestBuilders {
+  public static func applicationPinAPI(liveURL: Foundation.URL, uatURL: Foundation.URL) -> SenseSDK.SensePinningFallbackRequestBuilder
+  public static var goSenseApplicationAPI: SenseSDK.SensePinningFallbackRequestBuilder {
+    get
+  }
+  public static func goSenseApplicationAPIBuilder() -> SenseSDK.SensePinningFallbackRequestBuilder
+  public static func sdkPinAPI(liveURL: Foundation.URL, uatURL: Foundation.URL) -> SenseSDK.SensePinningFallbackRequestBuilder
+  public static var goSenseSDKCDN: SenseSDK.SensePinningFallbackRequestBuilder {
+    get
+  }
+  public static func goSenseSDKCDNBuilder() -> SenseSDK.SensePinningFallbackRequestBuilder
+}
 @available(iOS 13.0, *)
-extension SenseSDK.PinningGuard : Foundation.URLSessionDelegate {
-  @objc final public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+public enum SenseAppSSLPinning {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initialize(config: SenseSDK.SensePinningConfig?, apiKey: Swift.String, environment: Swift.String = "live", fallbackRequestBuilder: SenseSDK.SensePinningFallbackRequestBuilder? = nil, manifestEd25519PublicKeyBase64: Swift.String? = nil) async throws
+  #endif
+  public static func reportPinFailure() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeURLSession(configuration: Foundation.URLSessionConfiguration = .default, delegateQueue: Foundation.OperationQueue? = nil, onPinFailure: SenseSDK.SensePinFailureHandler? = nil) throws -> Foundation.URLSession
+  #endif
+}
+@available(iOS 13.0, *)
+public enum SenseSDKSSLPinning {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initialize(apiKey: Swift.String, environment: Swift.String = "live", pinSets: [SenseSDK.SensePinSet]? = nil, manifestEd25519PublicKeyBase64: Swift.String? = nil) async throws
+  #endif
+  public static func reportPinFailure() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeURLSession(configuration: Foundation.URLSessionConfiguration = .default, delegateQueue: Foundation.OperationQueue? = nil, onPinFailure: SenseSDK.SensePinFailureHandler? = nil) throws -> Foundation.URLSession
+  #endif
 }
 @_hasMissingDesignatedInitializers public class MemoryProtectionManager {
   public static let shared: SenseSDK.MemoryProtectionManager
   public func checkMemoryTampering() -> Swift.Bool
   @objc deinit
 }
+#if compiler(>=5.3) && $NonescapableTypes
 public func screenSize() -> Swift.String?
+#endif
 public struct CustomAlert : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -91,8 +160,12 @@ public func captureOriginalMethods()
 public class PrivacyManager {
   public static let shared: SenseSDK.PrivacyManager
   public func start()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func addPrivacyScreen(window: UIKit.UIWindow?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func removePrivacyScreen(window: UIKit.UIWindow?)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class SenseConfig : ObjectiveC.NSObject {
@@ -102,6 +175,7 @@ public class PrivacyManager {
   @objc public var tag: Swift.String?
   @objc public var sessionId: Swift.String?
   @objc public var metaInfo: [Swift.String : Any]?
+  @objc public var sensePinningConfig: SenseSDK.SensePinningConfig?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -127,6 +201,27 @@ public class PrivacyManager {
   @objc func onAutomatedInstall(isOn: Swift.Bool)
   @objc func onSandboxEnvironment(isOn: Swift.Bool)
   @objc func onTimeZoneMismatch(isOn: Swift.Bool)
+  @objc func onDevicePolicyEnforcementDetected(isOn: Swift.Bool)
+  @objc func onSystemTimeManipulationDetected(isOn: Swift.Bool)
+  @objc func onThirdPartyKeyboardDetected(isOn: Swift.Bool)
+  @objc func onUntrustedScreenReaderDetected(isOn: Swift.Bool)
+  @objc func onChecksumValidationFailed(isOn: Swift.Bool)
+  @objc func onKeystrokeInjectionDetected(isOn: Swift.Bool)
+  @objc func onMaliciousPiPDetected(isOn: Swift.Bool)
+  @objc func onNonSSLTLSConnectionDetected(isOn: Swift.Bool)
+  @objc func onSSLPinningBypassDetected(isOn: Swift.Bool)
+  @objc func onActivePhoneCallDetected(isOn: Swift.Bool)
+  @objc func onIPBlocklisted(isOn: Swift.Bool)
+  @objc func onBiometricStrengthValidationFailed(isOn: Swift.Bool)
+  @objc func onNetworkSandboxingDetected(isOn: Swift.Bool)
+  @objc func onVoIPVideoCallDetected(isOn: Swift.Bool)
+  @objc func onApplicationDataLeakageDetected(isOn: Swift.Bool)
+  @objc func onMemoryProtectionFailed(isOn: Swift.Bool)
+  @objc func onMemoryEditingDetected(isOn: Swift.Bool)
+  @objc func onSecureSessionSignallingFailed(isOn: Swift.Bool)
+  @objc func onRemoteControlDetected(isOn: Swift.Bool)
+  @objc func onAutoClickerDetected(isOn: Swift.Bool)
+  @objc func onMemoryTamperingDetected(isOn: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class Sense : ObjectiveC.NSObject {
   @objc public static var isAlertShowing: Swift.Bool
@@ -134,8 +229,16 @@ public class PrivacyManager {
   @objc public static var senseRASPdegate: (any SenseSDK.SenseRASPDelegate)?
   @objc override dynamic public init()
   @objc public func initializeLocationManager()
-  @objc public static func initSDK(senseConfig: SenseSDK.SenseConfig?, withDelegate: (any SenseSDK.SenseDelegate)?)
-  @objc public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
+  @objc @available(iOS 13.0, *)
+  public static func makePinnedURLSession(configuration: Foundation.URLSessionConfiguration = .default) throws -> Foundation.URLSession
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @available(iOS 13.0, *)
+  public static func initSDK(senseConfig: SenseSDK.SenseConfig?, withDelegate: (any SenseSDK.SenseDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @available(iOS 13.0, *)
+  public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
+  #endif
   @objc @available(iOS 13.0, *)
   public static func screenShield(for window: UIKit.UIWindow)
   @objc deinit
@@ -149,7 +252,9 @@ public enum CaptureReason : Swift.String, Swift.Sendable {
   case iphoneMirroring
   case macPeripheralDetected
   case none
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -177,8 +282,12 @@ final public class SenseScreenShield : @unchecked Swift.Sendable {
   final public func blockMirroring()
   final public func activate(for window: UIKit.UIWindow)
   final public func deactivate()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func addPrivacyScreen(window: UIKit.UIWindow?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func removePrivacyScreen(window: UIKit.UIWindow?)
+  #endif
   final public func enableScreenProtection(for window: UIKit.UIWindow)
 }
 public struct FetchResult {
@@ -189,6 +298,7 @@ public struct FetchResult {
   public let screenShot: Swift.Bool
   public let packageList: SenseSDK.PackageStatus
   public let pinningStatus: SenseSDK.SSLPinningLabel
+  public let resultList: [[Swift.String : Any]]
 }
 extension SenseSDK.CaptureReason : Swift.Equatable {}
 extension SenseSDK.CaptureReason : Swift.Hashable {}

@@ -9,6 +9,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "SenseSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
         "moduleName": "SenseSDK"
       },
       {
@@ -20,31 +30,30 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PinningGuard",
-        "printedName": "PinningGuard",
+        "name": "SensePinSet",
+        "printedName": "SensePinSet",
         "children": [
           {
             "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "name": "host",
+            "printedName": "host",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PinningGuard",
-                "printedName": "SenseSDK.PinningGuard",
-                "usr": "c:@M@SenseSDK@objc(cs)PinningGuard"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SenseSDK12PinningGuardC6sharedACvpZ",
-            "mangledName": "$s8SenseSDK12PinningGuardC6sharedACvpZ",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinSet(py)host",
+            "mangledName": "$s8SenseSDK0A6PinSetC4hostSSvp",
             "moduleName": "SenseSDK",
-            "static": true,
             "declAttributes": [
-              "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -56,19 +65,19 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PinningGuard",
-                    "printedName": "SenseSDK.PinningGuard",
-                    "usr": "c:@M@SenseSDK@objc(cs)PinningGuard"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SenseSDK12PinningGuardC6sharedACvgZ",
-                "mangledName": "$s8SenseSDK12PinningGuardC6sharedACvgZ",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinSet(im)host",
+                "mangledName": "$s8SenseSDK0A6PinSetC4hostSSvg",
                 "moduleName": "SenseSDK",
-                "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -76,28 +85,35 @@
           },
           {
             "kind": "Var",
-            "name": "lastPinningStatus",
-            "printedName": "lastPinningStatus",
+            "name": "pins",
+            "printedName": "pins",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SenseSDK12PinningGuardC04lastC6StatusSbvp",
-            "mangledName": "$s8SenseSDK12PinningGuardC04lastC6StatusSbvp",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinSet(py)pins",
+            "mangledName": "$s8SenseSDK0A6PinSetC4pinsSaySSGvp",
             "moduleName": "SenseSDK",
             "declAttributes": [
-              "HasInitialValue",
               "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
-              "RawDocComment"
+              "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -107,238 +123,124 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8SenseSDK12PinningGuardC04lastC6StatusSbvg",
-                "mangledName": "$s8SenseSDK12PinningGuardC04lastC6StatusSbvg",
-                "moduleName": "SenseSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "lastPinningReason",
-            "printedName": "lastPinningReason",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8SenseSDK12PinningGuardC04lastC6ReasonSSvp",
-            "mangledName": "$s8SenseSDK12PinningGuardC04lastC6ReasonSSvp",
-            "moduleName": "SenseSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8SenseSDK12PinningGuardC04lastC6ReasonSSvg",
-                "mangledName": "$s8SenseSDK12PinningGuardC04lastC6ReasonSSvg",
-                "moduleName": "SenseSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "startPinning",
-            "printedName": "startPinning(withConfig:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, Swift.String)",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
                     "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
                       {
                         "kind": "TypeNominal",
                         "name": "String",
                         "printedName": "Swift.String",
                         "usr": "s:SS"
                       }
-                    ]
+                    ],
+                    "usr": "s:Sa"
                   }
-                ]
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinSet(im)pins",
+                "mangledName": "$s8SenseSDK0A6PinSetC4pinsSaySSGvg",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
               }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SenseSDK12PinningGuardC05startC010withConfig10completionySDySSypG_ySb_SStctF",
-            "mangledName": "$s8SenseSDK12PinningGuardC05startC010withConfig10completionySDySSypG_ySb_SStctF",
-            "moduleName": "SenseSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
+            ]
           },
           {
-            "kind": "Function",
-            "name": "urlSession",
-            "printedName": "urlSession(_:didReceive:completionHandler:)",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(host:pins:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "SensePinSet",
+                "printedName": "SenseSDK.SensePinSet",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinSet"
               },
               {
                 "kind": "TypeNominal",
-                "name": "URLSession",
-                "printedName": "Foundation.URLSession",
-                "usr": "c:objc(cs)NSURLSession"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "URLAuthenticationChallenge",
-                "printedName": "Foundation.URLAuthenticationChallenge",
-                "usr": "c:objc(cs)NSURLAuthenticationChallenge"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ()",
+                "name": "Array",
+                "printedName": "[Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AuthChallengeDisposition",
-                        "printedName": "Foundation.URLSession.AuthChallengeDisposition",
-                        "usr": "c:@E@NSURLSessionAuthChallengeDisposition"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.URLCredential?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "URLCredential",
-                            "printedName": "Foundation.URLCredential",
-                            "usr": "c:objc(cs)NSURLCredential"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
-                ]
+                ],
+                "usr": "s:Sa"
               }
             ],
-            "declKind": "Func",
-            "usr": "c:@CM@SenseSDK@objc(cs)PinningGuard(im)URLSession:didReceiveChallenge:completionHandler:",
-            "mangledName": "$s8SenseSDK12PinningGuardC10urlSession_10didReceive17completionHandlerySo12NSURLSessionC_So28NSURLAuthenticationChallengeCySo0k4AuthM11DispositionV_So15NSURLCredentialCSgtctF",
+            "declKind": "Constructor",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinSet(im)initWithHost:pins:",
+            "mangledName": "$s8SenseSDK0A6PinSetC4host4pinsACSS_SaySSGtcfc",
             "moduleName": "SenseSDK",
-            "objc_name": "URLSession:didReceiveChallenge:completionHandler:",
             "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SensePinSet",
+                "printedName": "SenseSDK.SensePinSet",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinSet"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinSet(im)init",
+            "mangledName": "$s8SenseSDK0A6PinSetCACycfc",
+            "moduleName": "SenseSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@SenseSDK@objc(cs)PinningGuard",
-        "mangledName": "$s8SenseSDK12PinningGuardC",
+        "usr": "c:@M@SenseSDK@objc(cs)SensePinSet",
+        "mangledName": "$s8SenseSDK0A6PinSetC",
         "moduleName": "SenseSDK",
-        "intro_iOS": "13.0",
         "declAttributes": [
           "Final",
           "AccessControl",
-          "Available",
+          "ObjCMembers",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -404,10 +306,2391 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SensePinningConfig",
+        "printedName": "SensePinningConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pinSets",
+            "printedName": "pinSets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[SenseSDK.SensePinSet]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SenseSDK.SensePinSet]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinSet",
+                        "printedName": "SenseSDK.SensePinSet",
+                        "usr": "c:@M@SenseSDK@objc(cs)SensePinSet"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(py)pinSets",
+            "mangledName": "$s8SenseSDK0A13PinningConfigC7pinSetsSayAA0A6PinSetCGSgvp",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[SenseSDK.SensePinSet]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[SenseSDK.SensePinSet]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SensePinSet",
+                            "printedName": "SenseSDK.SensePinSet",
+                            "usr": "c:@M@SenseSDK@objc(cs)SensePinSet"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)pinSets",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC7pinSetsSayAA0A6PinSetCGSgvg",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[SenseSDK.SensePinSet]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[SenseSDK.SensePinSet]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SensePinSet",
+                            "printedName": "SenseSDK.SensePinSet",
+                            "usr": "c:@M@SenseSDK@objc(cs)SensePinSet"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)setPinSets:",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC7pinSetsSayAA0A6PinSetCGSgvs",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A13PinningConfigC7pinSetsSayAA0A6PinSetCGSgvM",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC7pinSetsSayAA0A6PinSetCGSgvM",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enabled",
+            "printedName": "enabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(py)enabled",
+            "mangledName": "$s8SenseSDK0A13PinningConfigC7enabledSbvp",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)enabled",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC7enabledSbvg",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)setEnabled:",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC7enabledSbvs",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A13PinningConfigC7enabledSbvM",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC7enabledSbvM",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requirePinsForAllHosts",
+            "printedName": "requirePinsForAllHosts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(py)requirePinsForAllHosts",
+            "mangledName": "$s8SenseSDK0A13PinningConfigC22requirePinsForAllHostsSbvp",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)requirePinsForAllHosts",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC22requirePinsForAllHostsSbvg",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)setRequirePinsForAllHosts:",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC22requirePinsForAllHostsSbvs",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A13PinningConfigC22requirePinsForAllHostsSbvM",
+                "mangledName": "$s8SenseSDK0A13PinningConfigC22requirePinsForAllHostsSbvM",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(pinSets:enabled:requirePinsForAllHosts:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SensePinningConfig",
+                "printedName": "SenseSDK.SensePinningConfig",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[SenseSDK.SensePinSet]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SenseSDK.SensePinSet]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinSet",
+                        "printedName": "SenseSDK.SensePinSet",
+                        "usr": "c:@M@SenseSDK@objc(cs)SensePinSet"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)initWithPinSets:enabled:requirePinsForAllHosts:",
+            "mangledName": "$s8SenseSDK0A13PinningConfigC7pinSets7enabled22requirePinsForAllHostsACSayAA0A6PinSetCGSg_S2btcfc",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SensePinningConfig",
+                "printedName": "SenseSDK.SensePinningConfig",
+                "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig(im)init",
+            "mangledName": "$s8SenseSDK0A13PinningConfigCACycfc",
+            "moduleName": "SenseSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig",
+        "mangledName": "$s8SenseSDK0A13PinningConfigC",
+        "moduleName": "SenseSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SensePinningError",
+        "printedName": "SensePinningError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notInitialized",
+            "printedName": "notInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO14notInitializedyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO14notInitializedyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidHost",
+            "printedName": "invalidHost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> (Swift.String) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SenseSDK.SensePinningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO11invalidHostyACSScACmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO11invalidHostyACSScACmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidPin",
+            "printedName": "invalidPin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> (Swift.String) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SenseSDK.SensePinningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO10invalidPinyACSScACmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO10invalidPinyACSScACmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "duplicateRemoteHost",
+            "printedName": "duplicateRemoteHost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> (Swift.String) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SenseSDK.SensePinningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO19duplicateRemoteHostyACSScACmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO19duplicateRemoteHostyACSScACmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "fallbackNotConfigured",
+            "printedName": "fallbackNotConfigured",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO21fallbackNotConfiguredyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO21fallbackNotConfiguredyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidHTTPResponse",
+            "printedName": "invalidHTTPResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO19invalidHTTPResponseyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO19invalidHTTPResponseyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "emptyRemotePinSet",
+            "printedName": "emptyRemotePinSet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO17emptyRemotePinSetyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO17emptyRemotePinSetyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "expiredRemotePinSet",
+            "printedName": "expiredRemotePinSet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> (Swift.String) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SenseSDK.SensePinningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO19expiredRemotePinSetyACSScACmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO19expiredRemotePinSetyACSScACmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidSignedManifest",
+            "printedName": "invalidSignedManifest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO21invalidSignedManifestyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO21invalidSignedManifestyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "manifestSignatureVerificationFailed",
+            "printedName": "manifestSignatureVerificationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO35manifestSignatureVerificationFailedyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO35manifestSignatureVerificationFailedyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidManifestPublicKey",
+            "printedName": "invalidManifestPublicKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO24invalidManifestPublicKeyyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO24invalidManifestPublicKeyyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "systemTrustFailed",
+            "printedName": "systemTrustFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> (Swift.String) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SenseSDK.SensePinningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO17systemTrustFailedyACSScACmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO17systemTrustFailedyACSScACmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "pinMismatch",
+            "printedName": "pinMismatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> (Swift.String) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SenseSDK.SensePinningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO11pinMismatchyACSScACmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO11pinMismatchyACSScACmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "strictHostHasNoPins",
+            "printedName": "strictHostHasNoPins",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> (Swift.String) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SenseSDK.SensePinningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO19strictHostHasNoPinsyACSScACmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO19strictHostHasNoPinsyACSScACmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "malformedCertificate",
+            "printedName": "malformedCertificate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SenseSDK.SensePinningError.Type) -> SenseSDK.SensePinningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningError",
+                    "printedName": "SenseSDK.SensePinningError",
+                    "usr": "s:8SenseSDK0A12PinningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SenseSDK.SensePinningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningError",
+                        "printedName": "SenseSDK.SensePinningError",
+                        "usr": "s:8SenseSDK0A12PinningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SenseSDK0A12PinningErrorO20malformedCertificateyA2CmF",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO20malformedCertificateyA2CmF",
+            "moduleName": "SenseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SenseSDK0A12PinningErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s8SenseSDK0A12PinningErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A12PinningErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s8SenseSDK0A12PinningErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SenseSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8SenseSDK0A12PinningErrorO",
+        "mangledName": "$s8SenseSDK0A12PinningErrorO",
+        "moduleName": "SenseSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SenseSSLPinningManager",
+        "printedName": "SenseSSLPinningManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:apiKey:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SenseSDK.SensePinningConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningConfig",
+                    "printedName": "SenseSDK.SensePinningConfig",
+                    "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A17SSLPinningManagerC10initialize6config6apiKey11environmentyAA0A13PinningConfigCSg_S2StYaKF",
+            "mangledName": "$s8SenseSDK0A17SSLPinningManagerC10initialize6config6apiKey11environmentyAA0A13PinningConfigCSg_S2StYaKF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshPins",
+            "printedName": "refreshPins()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A17SSLPinningManagerC11refreshPinsyyYaKF",
+            "mangledName": "$s8SenseSDK0A17SSLPinningManagerC11refreshPinsyyYaKF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportPinFailure",
+            "printedName": "reportPinFailure()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A17SSLPinningManagerC16reportPinFailureyyYaKF",
+            "mangledName": "$s8SenseSDK0A17SSLPinningManagerC16reportPinFailureyyYaKF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeURLSession",
+            "printedName": "makeURLSession(configuration:delegateQueue:onPinFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A17SSLPinningManagerC14makeURLSession13configuration13delegateQueue12onPinFailureSo12NSURLSessionCSo0M13ConfigurationC_So011NSOperationI0CSgySSYbcSgtKF",
+            "mangledName": "$s8SenseSDK0A17SSLPinningManagerC14makeURLSession13configuration13delegateQueue12onPinFailureSo12NSURLSessionCSo0M13ConfigurationC_So011NSOperationI0CSgySSYbcSgtKF",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8SenseSDK0A17SSLPinningManagerC",
+        "mangledName": "$s8SenseSDK0A17SSLPinningManagerC",
+        "moduleName": "SenseSDK",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SensePinningRequestBuilders",
+        "printedName": "SensePinningRequestBuilders",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "applicationPinAPI",
+            "printedName": "applicationPinAPI(liveURL:uatURL:)",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A22PinningRequestBuildersO17applicationPinAPI7liveURL03uatJ010Foundation10URLRequestVSS_SStYbKcAG0J0V_AKtFZ",
+            "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO17applicationPinAPI7liveURL03uatJ010Foundation10URLRequestVSS_SStYbKcAG0J0V_AKtFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "goSenseApplicationAPI",
+            "printedName": "goSenseApplicationAPI",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SenseSDK0A22PinningRequestBuildersO02goA14ApplicationAPIy10Foundation10URLRequestVSS_SStYbKcvpZ",
+            "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO02goA14ApplicationAPIy10Foundation10URLRequestVSS_SStYbKcvpZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A22PinningRequestBuildersO02goA14ApplicationAPIy10Foundation10URLRequestVSS_SStYbKcvgZ",
+                "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO02goA14ApplicationAPIy10Foundation10URLRequestVSS_SStYbKcvgZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "goSenseApplicationAPIBuilder",
+            "printedName": "goSenseApplicationAPIBuilder()",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A22PinningRequestBuildersO02goA21ApplicationAPIBuilder10Foundation10URLRequestVSS_SStYbKcyFZ",
+            "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO02goA21ApplicationAPIBuilder10Foundation10URLRequestVSS_SStYbKcyFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkPinAPI",
+            "printedName": "sdkPinAPI(liveURL:uatURL:)",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A22PinningRequestBuildersO9sdkPinAPI7liveURL03uatJ010Foundation10URLRequestVSS_SStYbKcAG0J0V_AKtFZ",
+            "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO9sdkPinAPI7liveURL03uatJ010Foundation10URLRequestVSS_SStYbKcAG0J0V_AKtFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "goSenseSDKCDN",
+            "printedName": "goSenseSDKCDN",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SenseSDK0A22PinningRequestBuildersO02goA6SDKCDNy10Foundation10URLRequestVSS_SStYbKcvpZ",
+            "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO02goA6SDKCDNy10Foundation10URLRequestVSS_SStYbKcvpZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A22PinningRequestBuildersO02goA6SDKCDNy10Foundation10URLRequestVSS_SStYbKcvgZ",
+                "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO02goA6SDKCDNy10Foundation10URLRequestVSS_SStYbKcvgZ",
+                "moduleName": "SenseSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "goSenseSDKCDNBuilder",
+            "printedName": "goSenseSDKCDNBuilder()",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A22PinningRequestBuildersO02goA13SDKCDNBuilder10Foundation10URLRequestVSS_SStYbKcyFZ",
+            "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO02goA13SDKCDNBuilder10Foundation10URLRequestVSS_SStYbKcyFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8SenseSDK0A22PinningRequestBuildersO",
+        "mangledName": "$s8SenseSDK0A22PinningRequestBuildersO",
+        "moduleName": "SenseSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SenseAppSSLPinning",
+        "printedName": "SenseAppSSLPinning",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:apiKey:environment:fallbackRequestBuilder:manifestEd25519PublicKeyBase64:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SenseSDK.SensePinningConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningConfig",
+                    "printedName": "SenseSDK.SensePinningConfig",
+                    "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, Swift.String) throws -> Foundation.URLRequest)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) throws -> Foundation.URLRequest",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A13AppSSLPinningO10initialize6config6apiKey11environment22fallbackRequestBuilder021manifestEd25519PublicH6Base64yAA0A13PinningConfigCSg_S2S10Foundation10URLRequestVSS_SStYbKcSgSSSgtYaKFZ",
+            "mangledName": "$s8SenseSDK0A13AppSSLPinningO10initialize6config6apiKey11environment22fallbackRequestBuilder021manifestEd25519PublicH6Base64yAA0A13PinningConfigCSg_S2S10Foundation10URLRequestVSS_SStYbKcSgSSSgtYaKFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportPinFailure",
+            "printedName": "reportPinFailure()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A13AppSSLPinningO16reportPinFailureyyYaKFZ",
+            "mangledName": "$s8SenseSDK0A13AppSSLPinningO16reportPinFailureyyYaKFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeURLSession",
+            "printedName": "makeURLSession(configuration:delegateQueue:onPinFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A13AppSSLPinningO14makeURLSession13configuration13delegateQueue12onPinFailureSo12NSURLSessionCSo0M13ConfigurationC_So011NSOperationI0CSgySSYbcSgtKFZ",
+            "mangledName": "$s8SenseSDK0A13AppSSLPinningO14makeURLSession13configuration13delegateQueue12onPinFailureSo12NSURLSessionCSo0M13ConfigurationC_So011NSOperationI0CSgySSYbcSgtKFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8SenseSDK0A13AppSSLPinningO",
+        "mangledName": "$s8SenseSDK0A13AppSSLPinningO",
+        "moduleName": "SenseSDK",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SenseSDKSSLPinning",
+        "printedName": "SenseSDKSSLPinning",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(apiKey:environment:pinSets:manifestEd25519PublicKeyBase64:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[SenseSDK.SensePinSet]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SenseSDK.SensePinSet]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinSet",
+                        "printedName": "SenseSDK.SensePinSet",
+                        "usr": "c:@M@SenseSDK@objc(cs)SensePinSet"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A13SDKSSLPinningO10initialize6apiKey11environment7pinSets021manifestEd25519PublicF6Base64ySS_SSSayAA0A6PinSetCGSgSSSgtYaKFZ",
+            "mangledName": "$s8SenseSDK0A13SDKSSLPinningO10initialize6apiKey11environment7pinSets021manifestEd25519PublicF6Base64ySS_SSSayAA0A6PinSetCGSgSSSgtYaKFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportPinFailure",
+            "printedName": "reportPinFailure()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A13SDKSSLPinningO16reportPinFailureyyYaKFZ",
+            "mangledName": "$s8SenseSDK0A13SDKSSLPinningO16reportPinFailureyyYaKFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeURLSession",
+            "printedName": "makeURLSession(configuration:delegateQueue:onPinFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SenseSDK0A13SDKSSLPinningO14makeURLSession13configuration13delegateQueue12onPinFailureSo12NSURLSessionCSo0L13ConfigurationC_So011NSOperationH0CSgySSYbcSgtKFZ",
+            "mangledName": "$s8SenseSDK0A13SDKSSLPinningO14makeURLSession13configuration13delegateQueue12onPinFailureSo12NSURLSessionCSo0L13ConfigurationC_So011NSOperationH0CSgySSYbcSgtKFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8SenseSDK0A13SDKSSLPinningO",
+        "mangledName": "$s8SenseSDK0A13SDKSSLPinningO",
+        "moduleName": "SenseSDK",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -2432,6 +4715,123 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "sensePinningConfig",
+            "printedName": "sensePinningConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SenseSDK.SensePinningConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SensePinningConfig",
+                    "printedName": "SenseSDK.SensePinningConfig",
+                    "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SenseSDK@objc(cs)SenseConfig(py)sensePinningConfig",
+            "mangledName": "$s8SenseSDK0A6ConfigC012sensePinningC0AA0aeC0CSgvp",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SenseSDK.SensePinningConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningConfig",
+                        "printedName": "SenseSDK.SensePinningConfig",
+                        "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SenseConfig(im)sensePinningConfig",
+                "mangledName": "$s8SenseSDK0A6ConfigC012sensePinningC0AA0aeC0CSgvg",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SenseSDK.SensePinningConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SensePinningConfig",
+                        "printedName": "SenseSDK.SensePinningConfig",
+                        "usr": "c:@M@SenseSDK@objc(cs)SensePinningConfig"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SenseSDK@objc(cs)SenseConfig(im)setSensePinningConfig:",
+                "mangledName": "$s8SenseSDK0A6ConfigC012sensePinningC0AA0aeC0CSgvs",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK0A6ConfigC012sensePinningC0AA0aeC0CSgvM",
+                "mangledName": "$s8SenseSDK0A6ConfigC012sensePinningC0AA0aeC0CSgvM",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3264,6 +5664,637 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDevicePolicyEnforcementDetected",
+            "printedName": "onDevicePolicyEnforcementDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onDevicePolicyEnforcementDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP33onDevicePolicyEnforcementDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSystemTimeManipulationDetected",
+            "printedName": "onSystemTimeManipulationDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onSystemTimeManipulationDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP32onSystemTimeManipulationDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onThirdPartyKeyboardDetected",
+            "printedName": "onThirdPartyKeyboardDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onThirdPartyKeyboardDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP28onThirdPartyKeyboardDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUntrustedScreenReaderDetected",
+            "printedName": "onUntrustedScreenReaderDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onUntrustedScreenReaderDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP31onUntrustedScreenReaderDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onChecksumValidationFailed",
+            "printedName": "onChecksumValidationFailed(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onChecksumValidationFailedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP26onChecksumValidationFailed4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onKeystrokeInjectionDetected",
+            "printedName": "onKeystrokeInjectionDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onKeystrokeInjectionDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP28onKeystrokeInjectionDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onMaliciousPiPDetected",
+            "printedName": "onMaliciousPiPDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onMaliciousPiPDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP22onMaliciousPiPDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNonSSLTLSConnectionDetected",
+            "printedName": "onNonSSLTLSConnectionDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onNonSSLTLSConnectionDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP29onNonSSLTLSConnectionDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSSLPinningBypassDetected",
+            "printedName": "onSSLPinningBypassDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onSSLPinningBypassDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP26onSSLPinningBypassDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onActivePhoneCallDetected",
+            "printedName": "onActivePhoneCallDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onActivePhoneCallDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP25onActivePhoneCallDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onIPBlocklisted",
+            "printedName": "onIPBlocklisted(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onIPBlocklistedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP15onIPBlocklisted4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBiometricStrengthValidationFailed",
+            "printedName": "onBiometricStrengthValidationFailed(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onBiometricStrengthValidationFailedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP35onBiometricStrengthValidationFailed4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNetworkSandboxingDetected",
+            "printedName": "onNetworkSandboxingDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onNetworkSandboxingDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP27onNetworkSandboxingDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onVoIPVideoCallDetected",
+            "printedName": "onVoIPVideoCallDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onVoIPVideoCallDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP23onVoIPVideoCallDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onApplicationDataLeakageDetected",
+            "printedName": "onApplicationDataLeakageDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onApplicationDataLeakageDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP32onApplicationDataLeakageDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onMemoryProtectionFailed",
+            "printedName": "onMemoryProtectionFailed(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onMemoryProtectionFailedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP24onMemoryProtectionFailed4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onMemoryEditingDetected",
+            "printedName": "onMemoryEditingDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onMemoryEditingDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP23onMemoryEditingDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSecureSessionSignallingFailed",
+            "printedName": "onSecureSessionSignallingFailed(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onSecureSessionSignallingFailedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP31onSecureSessionSignallingFailed4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRemoteControlDetected",
+            "printedName": "onRemoteControlDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onRemoteControlDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP23onRemoteControlDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAutoClickerDetected",
+            "printedName": "onAutoClickerDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onAutoClickerDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP21onAutoClickerDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onMemoryTamperingDetected",
+            "printedName": "onMemoryTamperingDetected(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(pl)SenseRASPDelegate(im)onMemoryTamperingDetectedWithIsOn:",
+            "mangledName": "$s8SenseSDK0A12RASPDelegateP25onMemoryTamperingDetected4isOnySb_tF",
+            "moduleName": "SenseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SenseSDK.SenseRASPDelegate>",
+            "sugared_genericSig": "<Self where Self : SenseSDK.SenseRASPDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -3630,6 +6661,40 @@
           },
           {
             "kind": "Function",
+            "name": "makePinnedURLSession",
+            "printedName": "makePinnedURLSession(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SenseSDK@objc(cs)Sense(cm)makePinnedURLSessionWithConfiguration:error:",
+            "mangledName": "$s8SenseSDK0A0C20makePinnedURLSession13configurationSo12NSURLSessionCSo0G13ConfigurationC_tKFZ",
+            "moduleName": "SenseSDK",
+            "static": true,
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "initSDK",
             "printedName": "initSDK(senseConfig:withDelegate:)",
             "children": [
@@ -3672,9 +6737,11 @@
             "mangledName": "$s8SenseSDK0A0C04initB011senseConfig12withDelegateyAA0aE0CSg_AA0aG0_pSgtFZ",
             "moduleName": "SenseSDK",
             "static": true,
+            "intro_iOS": "13.0",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Available",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -3709,9 +6776,11 @@
             "mangledName": "$s8SenseSDK0A0C03getA7Details12withDelegateyAA0aF0_pSg_tFZ",
             "moduleName": "SenseSDK",
             "static": true,
+            "intro_iOS": "13.0",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Available",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -4214,6 +7283,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4952,6 +8028,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -5343,6 +8426,92 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "resultList",
+            "printedName": "resultList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.String : Any]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SenseSDK11FetchResultV10resultListSaySDySSypGGvp",
+            "mangledName": "$s8SenseSDK11FetchResultV10resultListSaySDySSypGGvp",
+            "moduleName": "SenseSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Any]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SenseSDK11FetchResultV10resultListSaySDySSypGGvg",
+                "mangledName": "$s8SenseSDK11FetchResultV10resultListSaySDySSypGGvg",
+                "moduleName": "SenseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -5374,704 +8543,830 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "BooleanLiteral",
-      "offset": 179,
+      "offset": 2481,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "BooleanLiteral",
-      "offset": 268,
+      "offset": 2527,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7952,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7984,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8031,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "Dictionary",
+      "offset": 8089,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "StringLiteral",
-      "offset": 330,
-      "length": 13,
-      "value": "\"not_checked\""
+      "offset": 26486,
+      "length": 2,
+      "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "StringLiteral",
+      "offset": 26527,
+      "length": 6,
+      "value": "\"live\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "StringLiteral",
+      "offset": 29392,
+      "length": 6,
+      "value": "\"live\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "StringLiteral",
+      "offset": 41670,
+      "length": 6,
+      "value": "\"live\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "StringLiteral",
+      "offset": 44300,
+      "length": 6,
+      "value": "\"live\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "kind": "Array",
+      "offset": 47056,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Array",
       "offset": 821,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Array",
       "offset": 1918,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Array",
       "offset": 1967,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 2060,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "BooleanLiteral",
-      "offset": 15744,
+      "offset": 15560,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Dictionary",
-      "offset": 30258,
+      "offset": 33340,
       "length": 3379,
       "value": "[(\"iPhone1,1\", 0.412), (\"iPhone1,2\", 0.412), (\"iPhone2,1\", 0.600), (\"iPhone3,1\", 0.800), (\"iPhone3,2\", 0.800), (\"iPhone3,3\", 0.800), (\"iPhone4,1\", 0.800), (\"iPhone5,1\", 1.3), (\"iPhone5,2\", 1.3), (\"iPhone5,3\", 1.3), (\"iPhone5,4\", 1.3), (\"iPhone6,1\", 1.3), (\"iPhone6,2\", 1.3), (\"iPhone7,2\", 1.4), (\"iPhone7,1\", 1.4), (\"iPhone8,1\", 1.85), (\"iPhone8,2\", 1.85), (\"iPhone8,4\", 1.85), (\"iPhone9,1\", 2.34), (\"iPhone9,3\", 2.34), (\"iPhone9,2\", 2.34), (\"iPhone9,4\", 2.34), (\"iPhone10,1\", 2.39), (\"iPhone10,4\", 2.39), (\"iPhone10,2\", 2.39), (\"iPhone10,5\", 2.39), (\"iPhone10,3\", 2.39), (\"iPhone10,6\", 2.39), (\"iPhone11,2\", 2.49), (\"iPhone11,4\", 2.49), (\"iPhone11,6\", 2.49), (\"iPhone11,8\", 2.49), (\"iPhone12,1\", 2.65), (\"iPhone12,3\", 2.65), (\"iPhone12,5\", 2.65), (\"iPhone12,8\", 2.65), (\"iPhone13,1\", 3.1), (\"iPhone13,2\", 3.1), (\"iPhone13,3\", 3.1), (\"iPhone13,4\", 3.1), (\"iPhone14,4\", 3.1), (\"iPhone14,5\", 3.1), (\"iPhone14,2\", 3.1), (\"iPhone14,3\", 3.1), (\"iPhone14,6\", 3.22), (\"iPhone14,7\", 3.46), (\"iPhone14,8\", 3.46), (\"iPhone15,2\", 3.46), (\"iPhone15,3\", 3.46), (\"iPhone15,4\", 3.46), (\"iPhone15,5\", 3.46), (\"iPhone16,1\", 3.78), (\"iPhone16,4\", 3.78), (\"iPhone17,1\", 4.00), (\"iPhone17,2\", 4.00), (\"iPhone17,3\", 4.00), (\"iPhone17,4\", 4.00), (\"iPhone18,1\", 4.30), (\"iPhone18,2\", 4.30), (\"iPhone18,3\", 4.30), (\"iPhone18,4\", 4.30)]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 50903,
+      "offset": 55522,
       "length": 8,
       "value": "\"button\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 50936,
+      "offset": 55555,
       "length": 11,
       "value": "\"show_view\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 50971,
+      "offset": 55590,
       "length": 10,
       "value": "\"bg_color\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 51077,
+      "offset": 55696,
       "length": 20,
       "value": "\"overlay_skip_alert\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 51127,
+      "offset": 55746,
       "length": 17,
       "value": "\"alerts_activity\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 51729,
+      "offset": 56348,
       "length": 10,
       "value": "\"bg_color\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 51765,
+      "offset": 56384,
       "length": 12,
       "value": "\"text_color\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 52628,
+      "offset": 57247,
       "length": 10,
       "value": "\"app_name\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 52666,
+      "offset": 57285,
       "length": 14,
       "value": "\"search_param\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
-      "kind": "StringLiteral",
-      "offset": 77053,
-      "length": 32,
-      "value": "\"com.Sense-Demo-Sample.uniqueid\""
-    },
-    {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
-      "kind": "StringLiteral",
-      "offset": 77138,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
-      "kind": "Array",
-      "offset": 79501,
-      "length": 124,
-      "value": "[\"sha256\/7EYPVXkVjd+TIgsM2tPZLAPytBVEnCkTM8CkRVBfthk=\", \"sha256\/61PTXv\/YSP6E2X+dutwglCkAmM3iUrzrubWvE8UnDbc=\"]"
-    },
-    {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
-      "kind": "Dictionary",
-      "offset": 85153,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "BooleanLiteral",
-      "offset": 99454,
+      "offset": 76685,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 99493,
+      "offset": 76728,
+      "length": 27,
+      "value": "\"Sense.cachedAppDataSizeMB\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 84062,
+      "length": 32,
+      "value": "\"com.Sense-Demo-Sample.uniqueid\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 84147,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "Dictionary",
+      "offset": 90472,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 107174,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 107213,
       "length": 25,
       "value": "\"com.sdk.firstLaunchDone\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 17,
       "value": "\"Default Heading\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 23,
       "value": "\"Default content here.\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 376,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 407,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 439,
       "length": 6,
       "value": "\"Skip\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 11,
       "value": "\"Close App\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 630,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 666,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 703,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 740,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 778,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 933,
       "length": 8,
       "value": "\"bottom\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 975,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1012,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1047,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1083,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1211,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 10730,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 11471,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 11503,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 11536,
       "length": 6,
       "value": "\"Skip\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 11572,
       "length": 7,
       "value": "\"Close\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11694,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11728,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 11887,
       "length": 8,
       "value": "\"bottom\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 11930,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11962,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11993,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12030,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12067,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12105,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12143,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12182,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/Constants.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 56,
-      "length": 35,
-      "value": "\"https:\/\/strctl.gosense.ai\/api\/v1\/\""
+      "offset": 54,
+      "length": 32,
+      "value": "\"https:\/\/strctl.gosense.ai\/api\/\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/Constants.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 118,
-      "length": 35,
-      "value": "\"https:\/\/strctl.gosense.ai\/api\/v2\/\""
-    },
-    {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 181,
+      "offset": 114,
       "length": 32,
       "value": "\"https:\/\/cdn.gosense.ai\/assets\/\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
       "offset": 478,
       "length": 391,
       "value": "[\"2r5Aj9Yho\", \"P7c0X8jfv\", \"j7n1Q3cYx\", \"0M4x7w3g2\", \"oJ6D0z38L\", \"7gR3Tb9kw\", \"oY4Aup6Bc\", \"V8a6Fs0AT\", \"5TgsY9N3l\", \"G1FN4sIL7\", \"qh5s3BWjz\", \"aqYzr2QCb\", \"0LOtfYE5v\", \"Pt9m5a4QW\", \"n7Uh0sV2x\", \"A0hYbTz8c\", \"Ch7bRsoXu\", \"Y3D5MCnft\", \"Kl4piCeV5\", \"bIu6LcX02\", \"S9bE1nI4H\", \"Vt0C1eLa9\", \"MiRj2pXza\", \"XD2v6H3ra\", \"ZYcuX6nGO\", \"l6ZhSgf1M\", \"Hv3o5VuDs\", \"pF5ohqI3a\", \"xI6p0uNag\", \"vQ4z1TC60\", \"jxGyf0TPS\", \"bH6VcoprQ\"]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
       "offset": 886,
       "length": 193,
       "value": "[\"zb6Y0JVs2\", \"JmS7XcA1l\", \"9vX4NQSrd\", \"qxlJB1kAe\", \"3vdgE7aIS\", \"GmhjsaPn0\", \"f9seTl0PK\", \"lS5HaN6mU\", \"p1AzUBd7q\", \"3WLq62kzc\", \"JeXk7szdm\", \"Xy1R0ksJD\", \"Oq5cdp01y\", \"d19Zj8oBa\", \"Vo2swXrLf\", \"U4gAd9x16\"]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
       "offset": 1168,
       "length": 10,
       "value": "\"sense_id\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
       "offset": 1237,
       "length": 12,
       "value": "\"request_id\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1491,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1526,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2416,
+      "offset": 3462,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 2459,
+      "offset": 3505,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "Dictionary",
+      "offset": 9484,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "Dictionary",
+      "offset": 9524,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2678,
+      "offset": 17749,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18108,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "Dictionary",
+      "offset": 18187,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18257,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "Dictionary",
+      "offset": 18529,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 3535,
+      "offset": 18996,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3662,
+      "offset": 19340,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20799,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 42035,
+      "offset": 70872,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "Array",
+      "offset": 71290,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 47765,
+      "offset": 77377,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 47811,
+      "offset": 77423,
       "length": 16,
       "value": "\"offline_signal\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 47829,
+      "offset": 77441,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 47862,
+      "offset": 77474,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 49613,
+      "offset": 79225,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 61442,
+      "offset": 94461,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 61474,
+      "offset": 94493,
       "length": 19,
       "value": "\"OfflineSenseQueue\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 62343,
+      "offset": 95362,
       "length": 17,
       "value": "\"networkRestored\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63610,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63657,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 64003,
+      "offset": 97057,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 66449,
+      "offset": 99549,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 66631,
+      "offset": 99731,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 66679,
+      "offset": 99779,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 66725,
+      "offset": 99825,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 66903,
+      "offset": 100003,
       "length": 32,
       "value": "\"ScreenShield.isMirroringActive\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 66813,
+      "offset": 99913,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 66997,
+      "offset": 100097,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 67033,
+      "offset": 100133,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 67074,
+      "offset": 100174,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 67243,
+      "offset": 100343,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 67293,
+      "offset": 100393,
       "length": 28,
       "value": "\"com.screenshield.lockprobe\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 67368,
+      "offset": 100468,
       "length": 23,
       "value": "\"ScreenShieldLockProbe\""
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 67428,
+      "offset": 100528,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 84754,
+      "offset": 119694,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 84789,
+      "offset": 119730,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo017\/Desktop\/Sense\/pro\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 84852,
+      "offset": 119794,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 120094,
+      "length": 42,
+      "value": "\"FetchApiCache - fetchHandler configured:\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 126272,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 126578,
+      "length": 3,
+      "value": "\" \""
     }
   ]
 }
