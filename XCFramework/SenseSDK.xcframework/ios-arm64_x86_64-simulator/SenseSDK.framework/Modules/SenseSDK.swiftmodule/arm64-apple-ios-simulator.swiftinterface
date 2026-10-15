@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SenseSDK
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SenseSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AdSupport
@@ -79,8 +79,7 @@ public enum SensePinningError : Foundation.LocalizedError, Swift.Sendable {
   }
   #endif
 }
-@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-final public class SenseSSLPinningManager : @unchecked Swift.Sendable {
+@_hasMissingDesignatedInitializers final public class SenseSSLPinningManager : @unchecked Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func initialize(config: SenseSDK.SensePinningConfig?, apiKey: Swift.String, environment: Swift.String = "live") async throws
   #endif
@@ -103,7 +102,6 @@ public enum SensePinningRequestBuilders {
   }
   public static func goSenseSDKCDNBuilder() -> SenseSDK.SensePinningFallbackRequestBuilder
 }
-@available(iOS 13.0, *)
 public enum SenseAppSSLPinning {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func initialize(config: SenseSDK.SensePinningConfig?, apiKey: Swift.String, environment: Swift.String = "live", fallbackRequestBuilder: SenseSDK.SensePinningFallbackRequestBuilder? = nil, manifestEd25519PublicKeyBase64: Swift.String? = nil) async throws
@@ -113,7 +111,6 @@ public enum SenseAppSSLPinning {
   public static func makeURLSession(configuration: Foundation.URLSessionConfiguration = .default, delegateQueue: Foundation.OperationQueue? = nil, onPinFailure: SenseSDK.SensePinFailureHandler? = nil) throws -> Foundation.URLSession
   #endif
 }
-@available(iOS 13.0, *)
 public enum SenseSDKSSLPinning {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func initialize(apiKey: Swift.String, environment: Swift.String = "live", pinSets: [SenseSDK.SensePinSet]? = nil, manifestEd25519PublicKeyBase64: Swift.String? = nil) async throws
@@ -156,8 +153,7 @@ public var senseConfig: SenseSDK.SenseConfig?
 }
 public func generateSwizzleReport() -> Swift.Bool
 public func captureOriginalMethods()
-@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-public class PrivacyManager {
+@_hasMissingDesignatedInitializers public class PrivacyManager {
   public static let shared: SenseSDK.PrivacyManager
   public func start()
   #if compiler(>=5.3) && $NonescapableTypes
@@ -229,18 +225,14 @@ public class PrivacyManager {
   @objc public static var senseRASPdegate: (any SenseSDK.SenseRASPDelegate)?
   @objc override dynamic public init()
   @objc public func initializeLocationManager()
-  @objc @available(iOS 13.0, *)
-  public static func makePinnedURLSession(configuration: Foundation.URLSessionConfiguration = .default) throws -> Foundation.URLSession
+  @objc public static func makePinnedURLSession(configuration: Foundation.URLSessionConfiguration = .default) throws -> Foundation.URLSession
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(iOS 13.0, *)
-  public static func initSDK(senseConfig: SenseSDK.SenseConfig?, withDelegate: (any SenseSDK.SenseDelegate)?)
+  @objc public static func initSDK(senseConfig: SenseSDK.SenseConfig?, withDelegate: (any SenseSDK.SenseDelegate)?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(iOS 13.0, *)
-  public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
+  @objc public static func getSenseDetails(withDelegate: (any SenseSDK.SenseDelegate)?)
   #endif
-  @objc @available(iOS 13.0, *)
-  public static func screenShield(for window: UIKit.UIWindow)
+  @objc public static func screenShield(for window: UIKit.UIWindow)
   @objc deinit
 }
 public struct PackageStatus : Swift.Codable {
@@ -260,8 +252,7 @@ public enum CaptureReason : Swift.String, Swift.Sendable {
     get
   }
 }
-@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-final public class SenseScreenShield : @unchecked Swift.Sendable {
+@_hasMissingDesignatedInitializers final public class SenseScreenShield : @unchecked Swift.Sendable {
   public static let shared: SenseSDK.SenseScreenShield
   @Combine.Published @_projectedValueProperty($captureActive) final public var captureActive: Swift.Bool {
     get
@@ -298,7 +289,6 @@ public struct FetchResult {
   public let screenShot: Swift.Bool
   public let packageList: SenseSDK.PackageStatus
   public let pinningStatus: SenseSDK.SSLPinningLabel
-  public let resultList: [[Swift.String : Any]]
 }
 extension SenseSDK.CaptureReason : Swift.Equatable {}
 extension SenseSDK.CaptureReason : Swift.Hashable {}

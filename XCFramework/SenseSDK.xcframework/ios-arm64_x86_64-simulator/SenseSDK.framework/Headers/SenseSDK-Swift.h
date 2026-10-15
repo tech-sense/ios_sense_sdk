@@ -328,10 +328,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <SenseRASPDelegate>
 + (void)setSenseRASPdegate:(id <SenseRASPDelegate> _Nullable)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)initializeLocationManager;
-+ (NSURLSession * _Nullable)makePinnedURLSessionWithConfiguration:(NSURLSessionConfiguration * _Nonnull)configuration error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
-+ (void)initSDKWithSenseConfig:(SenseConfig * _Nullable)senseConfig withDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_METHOD_FAMILY(none) SWIFT_AVAILABILITY(ios,introduced=13.0);
-+ (void)getSenseDetailsWithDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_AVAILABILITY(ios,introduced=13.0);
-+ (void)screenShieldFor:(UIWindow * _Nonnull)window SWIFT_AVAILABILITY(ios,introduced=13.0);
++ (NSURLSession * _Nullable)makePinnedURLSessionWithConfiguration:(NSURLSessionConfiguration * _Nonnull)configuration error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (void)initSDKWithSenseConfig:(SenseConfig * _Nullable)senseConfig withDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_METHOD_FAMILY(none);
++ (void)getSenseDetailsWithDelegate:(id <SenseDelegate> _Nullable)withDelegate;
++ (void)screenShieldFor:(UIWindow * _Nonnull)window;
 @end
 
 @class NSString;
@@ -765,10 +765,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <SenseRASPDelegate>
 + (void)setSenseRASPdegate:(id <SenseRASPDelegate> _Nullable)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)initializeLocationManager;
-+ (NSURLSession * _Nullable)makePinnedURLSessionWithConfiguration:(NSURLSessionConfiguration * _Nonnull)configuration error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
-+ (void)initSDKWithSenseConfig:(SenseConfig * _Nullable)senseConfig withDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_METHOD_FAMILY(none) SWIFT_AVAILABILITY(ios,introduced=13.0);
-+ (void)getSenseDetailsWithDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_AVAILABILITY(ios,introduced=13.0);
-+ (void)screenShieldFor:(UIWindow * _Nonnull)window SWIFT_AVAILABILITY(ios,introduced=13.0);
++ (NSURLSession * _Nullable)makePinnedURLSessionWithConfiguration:(NSURLSessionConfiguration * _Nonnull)configuration error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (void)initSDKWithSenseConfig:(SenseConfig * _Nullable)senseConfig withDelegate:(id <SenseDelegate> _Nullable)withDelegate SWIFT_METHOD_FAMILY(none);
++ (void)getSenseDetailsWithDelegate:(id <SenseDelegate> _Nullable)withDelegate;
++ (void)screenShieldFor:(UIWindow * _Nonnull)window;
 @end
 
 @class NSString;

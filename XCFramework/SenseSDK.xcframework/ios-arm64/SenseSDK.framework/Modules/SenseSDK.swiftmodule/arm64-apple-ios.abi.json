@@ -1781,11 +1781,9 @@
         "usr": "s:8SenseSDK0A17SSLPinningManagerC",
         "mangledName": "$s8SenseSDK0A17SSLPinningManagerC",
         "moduleName": "SenseSDK",
-        "intro_iOS": "13.0",
         "declAttributes": [
           "Final",
           "AccessControl",
-          "Available",
           "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
@@ -2470,10 +2468,8 @@
         "usr": "s:8SenseSDK0A13AppSSLPinningO",
         "mangledName": "$s8SenseSDK0A13AppSSLPinningO",
         "moduleName": "SenseSDK",
-        "intro_iOS": "13.0",
         "declAttributes": [
           "AccessControl",
-          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -2671,10 +2667,8 @@
         "usr": "s:8SenseSDK0A13SDKSSLPinningO",
         "mangledName": "$s8SenseSDK0A13SDKSSLPinningO",
         "moduleName": "SenseSDK",
-        "intro_iOS": "13.0",
         "declAttributes": [
           "AccessControl",
-          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -3952,10 +3946,8 @@
         "usr": "s:8SenseSDK14PrivacyManagerC",
         "mangledName": "$s8SenseSDK14PrivacyManagerC",
         "moduleName": "SenseSDK",
-        "intro_iOS": "13.0",
         "declAttributes": [
-          "AccessControl",
-          "Available"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -6683,11 +6675,9 @@
             "mangledName": "$s8SenseSDK0A0C20makePinnedURLSession13configurationSo12NSURLSessionCSo0G13ConfigurationC_tKFZ",
             "moduleName": "SenseSDK",
             "static": true,
-            "intro_iOS": "13.0",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Available",
               "ObjC"
             ],
             "throwing": true,
@@ -6737,11 +6727,9 @@
             "mangledName": "$s8SenseSDK0A0C04initB011senseConfig12withDelegateyAA0aE0CSg_AA0aG0_pSgtFZ",
             "moduleName": "SenseSDK",
             "static": true,
-            "intro_iOS": "13.0",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Available",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -6776,11 +6764,9 @@
             "mangledName": "$s8SenseSDK0A0C03getA7Details12withDelegateyAA0aF0_pSg_tFZ",
             "moduleName": "SenseSDK",
             "static": true,
-            "intro_iOS": "13.0",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Available",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -6807,11 +6793,9 @@
             "mangledName": "$s8SenseSDK0A0C12screenShield3forySo8UIWindowC_tFZ",
             "moduleName": "SenseSDK",
             "static": true,
-            "intro_iOS": "13.0",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Available",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -7624,10 +7608,8 @@
                 "mangledName": "$s8SenseSDK0A12ScreenShieldC21shieldBackgroundColorSo7UIColorCvM",
                 "moduleName": "SenseSDK",
                 "implicit": true,
-                "intro_iOS": "13.0",
                 "declAttributes": [
-                  "Final",
-                  "Available"
+                  "Final"
                 ],
                 "accessorKind": "_modify"
               }
@@ -7722,10 +7704,8 @@
                 "mangledName": "$s8SenseSDK0A12ScreenShieldC21detectiPhoneMirroringSbvM",
                 "moduleName": "SenseSDK",
                 "implicit": true,
-                "intro_iOS": "13.0",
                 "declAttributes": [
-                  "Final",
-                  "Available"
+                  "Final"
                 ],
                 "accessorKind": "_modify"
               }
@@ -7820,10 +7800,8 @@
                 "mangledName": "$s8SenseSDK0A12ScreenShieldC06detectC0SbvM",
                 "moduleName": "SenseSDK",
                 "implicit": true,
-                "intro_iOS": "13.0",
                 "declAttributes": [
-                  "Final",
-                  "Available"
+                  "Final"
                 ],
                 "accessorKind": "_modify"
               }
@@ -8000,11 +7978,9 @@
         "usr": "s:8SenseSDK0A12ScreenShieldC",
         "mangledName": "$s8SenseSDK0A12ScreenShieldC",
         "moduleName": "SenseSDK",
-        "intro_iOS": "13.0",
         "declAttributes": [
           "Final",
-          "AccessControl",
-          "Available"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -8426,92 +8402,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "resultList",
-            "printedName": "resultList",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.String : Any]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8SenseSDK11FetchResultV10resultListSaySDySSypGGvp",
-            "mangledName": "$s8SenseSDK11FetchResultV10resultListSaySDySSypGGvp",
-            "moduleName": "SenseSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[[Swift.String : Any]]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
-                          }
-                        ],
-                        "usr": "s:SD"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8SenseSDK11FetchResultV10resultListSaySDySSypGGvg",
-                "mangledName": "$s8SenseSDK11FetchResultV10resultListSaySDySSypGGvg",
-                "moduleName": "SenseSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Struct",
@@ -8543,828 +8433,800 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "BooleanLiteral",
       "offset": 2481,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "BooleanLiteral",
       "offset": 2527,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "BooleanLiteral",
       "offset": 7952,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "BooleanLiteral",
       "offset": 7984,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "BooleanLiteral",
       "offset": 8031,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "Dictionary",
       "offset": 8089,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "StringLiteral",
-      "offset": 26486,
+      "offset": 26390,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "StringLiteral",
-      "offset": 26527,
+      "offset": 26431,
       "length": 6,
       "value": "\"live\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "StringLiteral",
-      "offset": 29392,
+      "offset": 29296,
       "length": 6,
       "value": "\"live\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "StringLiteral",
-      "offset": 41670,
+      "offset": 41550,
       "length": 6,
       "value": "\"live\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "StringLiteral",
-      "offset": 44300,
+      "offset": 44156,
       "length": 6,
       "value": "\"live\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/PinningGuard.swift",
       "kind": "Array",
-      "offset": 47056,
+      "offset": 46888,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Array",
       "offset": 821,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Array",
       "offset": 1918,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Array",
       "offset": 1967,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 2060,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "BooleanLiteral",
       "offset": 15586,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Dictionary",
-      "offset": 33340,
+      "offset": 31525,
       "length": 3379,
       "value": "[(\"iPhone1,1\", 0.412), (\"iPhone1,2\", 0.412), (\"iPhone2,1\", 0.600), (\"iPhone3,1\", 0.800), (\"iPhone3,2\", 0.800), (\"iPhone3,3\", 0.800), (\"iPhone4,1\", 0.800), (\"iPhone5,1\", 1.3), (\"iPhone5,2\", 1.3), (\"iPhone5,3\", 1.3), (\"iPhone5,4\", 1.3), (\"iPhone6,1\", 1.3), (\"iPhone6,2\", 1.3), (\"iPhone7,2\", 1.4), (\"iPhone7,1\", 1.4), (\"iPhone8,1\", 1.85), (\"iPhone8,2\", 1.85), (\"iPhone8,4\", 1.85), (\"iPhone9,1\", 2.34), (\"iPhone9,3\", 2.34), (\"iPhone9,2\", 2.34), (\"iPhone9,4\", 2.34), (\"iPhone10,1\", 2.39), (\"iPhone10,4\", 2.39), (\"iPhone10,2\", 2.39), (\"iPhone10,5\", 2.39), (\"iPhone10,3\", 2.39), (\"iPhone10,6\", 2.39), (\"iPhone11,2\", 2.49), (\"iPhone11,4\", 2.49), (\"iPhone11,6\", 2.49), (\"iPhone11,8\", 2.49), (\"iPhone12,1\", 2.65), (\"iPhone12,3\", 2.65), (\"iPhone12,5\", 2.65), (\"iPhone12,8\", 2.65), (\"iPhone13,1\", 3.1), (\"iPhone13,2\", 3.1), (\"iPhone13,3\", 3.1), (\"iPhone13,4\", 3.1), (\"iPhone14,4\", 3.1), (\"iPhone14,5\", 3.1), (\"iPhone14,2\", 3.1), (\"iPhone14,3\", 3.1), (\"iPhone14,6\", 3.22), (\"iPhone14,7\", 3.46), (\"iPhone14,8\", 3.46), (\"iPhone15,2\", 3.46), (\"iPhone15,3\", 3.46), (\"iPhone15,4\", 3.46), (\"iPhone15,5\", 3.46), (\"iPhone16,1\", 3.78), (\"iPhone16,4\", 3.78), (\"iPhone17,1\", 4.00), (\"iPhone17,2\", 4.00), (\"iPhone17,3\", 4.00), (\"iPhone17,4\", 4.00), (\"iPhone18,1\", 4.30), (\"iPhone18,2\", 4.30), (\"iPhone18,3\", 4.30), (\"iPhone18,4\", 4.30)]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 55522,
+      "offset": 52373,
       "length": 8,
       "value": "\"button\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 55555,
+      "offset": 52406,
       "length": 11,
       "value": "\"show_view\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 55590,
+      "offset": 52441,
       "length": 10,
       "value": "\"bg_color\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 55696,
+      "offset": 52547,
       "length": 20,
       "value": "\"overlay_skip_alert\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 55746,
+      "offset": 52597,
       "length": 17,
       "value": "\"alerts_activity\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 56348,
+      "offset": 53199,
       "length": 10,
       "value": "\"bg_color\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 56384,
+      "offset": 53235,
       "length": 12,
       "value": "\"text_color\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 57247,
+      "offset": 54098,
       "length": 10,
       "value": "\"app_name\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 57285,
+      "offset": 54136,
       "length": 14,
       "value": "\"search_param\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "BooleanLiteral",
-      "offset": 76685,
+      "offset": 71999,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 76728,
+      "offset": 72042,
       "length": 27,
       "value": "\"Sense.cachedAppDataSizeMB\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 84062,
+      "offset": 79268,
       "length": 32,
       "value": "\"com.Sense-Demo-Sample.uniqueid\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 84147,
+      "offset": 79353,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "Dictionary",
-      "offset": 90472,
+      "offset": 85678,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "BooleanLiteral",
-      "offset": 107174,
+      "offset": 102051,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/DeviceDetails.swift",
       "kind": "StringLiteral",
-      "offset": 107213,
+      "offset": 102090,
       "length": 25,
       "value": "\"com.sdk.firstLaunchDone\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 17,
       "value": "\"Default Heading\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 23,
       "value": "\"Default content here.\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 376,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 407,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 439,
       "length": 6,
       "value": "\"Skip\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 11,
       "value": "\"Close App\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 630,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 666,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 703,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 740,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 778,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 933,
       "length": 8,
       "value": "\"bottom\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 975,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1012,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1047,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1083,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1211,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 10730,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 11471,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 11503,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 11536,
       "length": 6,
       "value": "\"Skip\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 11572,
       "length": 7,
       "value": "\"Close\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11694,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11728,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "StringLiteral",
       "offset": 11887,
       "length": 8,
       "value": "\"bottom\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 11930,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11962,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 11993,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12030,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12067,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12105,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12143,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/UiViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12182,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/Constants.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 54,
-      "length": 32,
-      "value": "\"https:\/\/strctl.gosense.ai\/api\/\""
+      "offset": 272,
+      "length": 38,
+      "value": "\"https:\/\/strctluat.gosense.ai\/api\/v1\/\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/Constants.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 114,
-      "length": 32,
-      "value": "\"https:\/\/cdn.gosense.ai\/assets\/\""
+      "offset": 337,
+      "length": 35,
+      "value": "\"https:\/\/strctluat.gosense.ai\/api\/\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 400,
+      "length": 35,
+      "value": "\"https:\/\/cdnuat.gosense.ai\/assets\/\""
+    },
+    {
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
       "offset": 478,
       "length": 391,
       "value": "[\"2r5Aj9Yho\", \"P7c0X8jfv\", \"j7n1Q3cYx\", \"0M4x7w3g2\", \"oJ6D0z38L\", \"7gR3Tb9kw\", \"oY4Aup6Bc\", \"V8a6Fs0AT\", \"5TgsY9N3l\", \"G1FN4sIL7\", \"qh5s3BWjz\", \"aqYzr2QCb\", \"0LOtfYE5v\", \"Pt9m5a4QW\", \"n7Uh0sV2x\", \"A0hYbTz8c\", \"Ch7bRsoXu\", \"Y3D5MCnft\", \"Kl4piCeV5\", \"bIu6LcX02\", \"S9bE1nI4H\", \"Vt0C1eLa9\", \"MiRj2pXza\", \"XD2v6H3ra\", \"ZYcuX6nGO\", \"l6ZhSgf1M\", \"Hv3o5VuDs\", \"pF5ohqI3a\", \"xI6p0uNag\", \"vQ4z1TC60\", \"jxGyf0TPS\", \"bH6VcoprQ\"]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
       "offset": 886,
       "length": 193,
       "value": "[\"zb6Y0JVs2\", \"JmS7XcA1l\", \"9vX4NQSrd\", \"qxlJB1kAe\", \"3vdgE7aIS\", \"GmhjsaPn0\", \"f9seTl0PK\", \"lS5HaN6mU\", \"p1AzUBd7q\", \"3WLq62kzc\", \"JeXk7szdm\", \"Xy1R0ksJD\", \"Oq5cdp01y\", \"d19Zj8oBa\", \"Vo2swXrLf\", \"U4gAd9x16\"]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
       "offset": 1168,
       "length": 10,
       "value": "\"sense_id\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
       "offset": 1237,
       "length": 12,
       "value": "\"request_id\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1491,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1526,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 3462,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
       "offset": 3505,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
       "offset": 9484,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
       "offset": 9524,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 17749,
+      "offset": 17745,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18108,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 18187,
+      "offset": 18282,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18257,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "Dictionary",
-      "offset": 18529,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 18996,
+      "offset": 18749,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 19340,
+      "offset": 18876,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 20799,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 70872,
+      "offset": 72258,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
-      "kind": "Array",
-      "offset": 71290,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 77377,
+      "offset": 78259,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 77423,
+      "offset": 78305,
       "length": 16,
       "value": "\"offline_signal\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 77441,
+      "offset": 78323,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 77474,
+      "offset": 78356,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 79225,
+      "offset": 80107,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 94461,
+      "offset": 94035,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 94493,
+      "offset": 94067,
       "length": 19,
       "value": "\"OfflineSenseQueue\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 95362,
+      "offset": 94936,
       "length": 17,
       "value": "\"networkRestored\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 97057,
+      "offset": 96583,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 99549,
+      "offset": 99051,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 99731,
+      "offset": 99233,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 99779,
+      "offset": 99281,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 99825,
+      "offset": 99327,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 100003,
+      "offset": 99505,
       "length": 32,
       "value": "\"ScreenShield.isMirroringActive\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 99913,
+      "offset": 99415,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 100097,
+      "offset": 99599,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 100133,
+      "offset": 99635,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 100174,
+      "offset": 99676,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Dictionary",
-      "offset": 100343,
+      "offset": 99845,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 100393,
+      "offset": 99895,
       "length": 28,
       "value": "\"com.screenshield.lockprobe\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 100468,
+      "offset": 99970,
       "length": 23,
       "value": "\"ScreenShieldLockProbe\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 100528,
+      "offset": 100030,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 119694,
+      "offset": 117115,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 119730,
+      "offset": 117151,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "Array",
-      "offset": 119794,
+      "offset": 117215,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 120094,
+      "offset": 117515,
       "length": 42,
       "value": "\"FetchApiCache - fetchHandler configured:\""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 126272,
+      "offset": 123621,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/ippo437\/ios-bulid\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
+      "filePath": "\/Users\/ippo437\/Documents\/check\/ios_sense_sdk\/SenseSDK\/SenseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 126578,
+      "offset": 123915,
       "length": 3,
       "value": "\" \""
     }
